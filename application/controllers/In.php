@@ -7,15 +7,21 @@ class In extends CI_Controller
     {
         $this->load->view("in/navbar");
     }
+    protected function footer()
+    {
+        $this->load->view("in/footer");
+    }
     public function index()
     {
         $this->navbar();
         $this->load->view('in/index');
         $this->footer();
     }
-
-    protected function footer()
+    public function login()
     {
-        $this->load->view("in/footer");
+        $this->navbar();
+        $this->load->view('in/login');
+        $this->footer();
     }
+   
 }
