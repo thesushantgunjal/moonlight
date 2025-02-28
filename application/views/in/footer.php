@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-section img" style="background-image: url(assets/web/images/bg_4.jpg);">
+<footer class="ftco-footer ftco-section img" style="background-image: url(<?= base_url() ?>assets/web/images/bg_4.jpg);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row mb-5">
@@ -57,7 +57,9 @@
 
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is
                     made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
                         href="https://colorlib.com" target="_blank">Colorlib</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -77,22 +79,22 @@
     </svg></div>
 
 
-<script src="assets/web/js/jquery.min.js"></script>
-<script src="assets/web/js/jquery-migrate-3.0.1.min.js"></script>
-<script src="assets/web/js/popper.min.js"></script>
-<script src="assets/web/js/bootstrap.min.js"></script>
-<script src="assets/web/js/jquery.easing.1.3.js"></script>
-<script src="assets/web/js/jquery.waypoints.min.js"></script>
-<script src="assets/web/js/jquery.stellar.min.js"></script>
-<script src="assets/web/js/owl.carousel.min.js"></script>
-<script src="assets/web/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/web/js/aos.js"></script>
-<script src="assets/web/js/jquery.animateNumber.min.js"></script>
-<script src="assets/web/js/bootstrap-datepicker.js"></script>
-<script src="assets/web/js/scrollax.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/jquery.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/popper.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/bootstrap.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/jquery.easing.1.3.js"></script>
+<script src="<?= base_url() ?>assets/web/js/jquery.waypoints.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/jquery.stellar.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/owl.carousel.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/jquery.magnific-popup.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/aos.js"></script>
+<script src="<?= base_url() ?>assets/web/js/jquery.animateNumber.min.js"></script>
+<script src="<?= base_url() ?>assets/web/js/bootstrap-datepicker.js"></script>
+<script src="<?= base_url() ?>assets/web/js/scrollax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-<script src="assets/web/js/google-map.js"></script>
-<script src="assets/web/js/main.js"></script>
+<script src="<?= base_url() ?>assets/web/js/google-map.js"></script>
+<script src="<?= base_url() ?>assets/web/js/main.js"></script>
 
 </body>
 

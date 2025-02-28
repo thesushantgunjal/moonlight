@@ -1,6 +1,6 @@
 <div class="hero">
     <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url(assets/web/images/bg_1.jpg);">
+        <div class="slider-item" style="background-image:url(<?= base_url() ?>assets/web/images/bg_1.jpg);">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text align-items-center justify-content-end">
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="slider-item" style="background-image:url(assets/web/images/bg_2.jpg);">
+        <div class="slider-item" style="background-image:url(<?= base_url() ?>assets/web/images/bg_2.jpg);">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text align-items-center justify-content-end">
@@ -185,9 +185,9 @@
         <div class="row no-gutters">
             <div class="col-md-7 order-md-last d-flex">
                 <div class="img img-1 mr-md-2 ftco-animate"
-                    style="background-image: url(assets/web/images/about-1.jpg);"></div>
+                    style="background-image: url(<?= base_url() ?>assets/web/images/about-1.jpg);"></div>
                 <div class="img img-2 ml-md-2 ftco-animate"
-                    style="background-image: url(assets/web/images/about-2.jpg);"></div>
+                    style="background-image: url(<?= base_url() ?>assets/web/images/about-2.jpg);"></div>
             </div>
             <div class="col-md-5 wrap-about pb-md-3 ftco-animate pr-md-5 pb-md-5 pt-md-4">
                 <div class="heading-section mb-4 my-5 my-md-0">
@@ -208,7 +208,7 @@
         <div class="row no-gutters ftco-animate justify-content-center">
             <div class="col-md-5 d-flex">
                 <div class="testimony-img aside-stretch-2"
-                    style="background-image: url(assets/web/images/testimony-img.jpg);"></div>
+                    style="background-image: url(<?= base_url() ?>assets/web/images/testimony-img.jpg);"></div>
             </div>
             <div class="col-md-7 py-5 pl-md-5">
                 <div class="py-md-5">
@@ -225,7 +225,7 @@
                                         of sentences fly into your mouth.</p>
                                 </div>
                                 <div class="d-flex">
-                                    <div class="user-img" style="background-image: url(assets/web/images/person_1.jpg)">
+                                    <div class="user-img" style="background-image: url(<?= base_url() ?>assets/web/images/person_1.jpg)">
                                     </div>
                                     <div class="pos ml-3">
                                         <p class="name">Gerald Hodson</p>
@@ -242,7 +242,7 @@
                                         of sentences fly into your mouth.</p>
                                 </div>
                                 <div class="d-flex">
-                                    <div class="user-img" style="background-image: url(assets/web/images/person_2.jpg)">
+                                    <div class="user-img" style="background-image: url(<?= base_url() ?>assets/web/images/person_2.jpg)">
                                     </div>
                                     <div class="pos ml-3">
                                         <p class="name">Gerald Hodson</p>
@@ -259,7 +259,7 @@
                                         of sentences fly into your mouth.</p>
                                 </div>
                                 <div class="d-flex">
-                                    <div class="user-img" style="background-image: url(assets/web/images/person_3.jpg)">
+                                    <div class="user-img" style="background-image: url(<?= base_url() ?>assets/web/images/person_3.jpg)">
                                     </div>
                                     <div class="pos ml-3">
                                         <p class="name">Gerald Hodson</p>
@@ -276,7 +276,7 @@
                                         of sentences fly into your mouth.</p>
                                 </div>
                                 <div class="d-flex">
-                                    <div class="user-img" style="background-image: url(assets/web/images/person_4.jpg)">
+                                    <div class="user-img" style="background-image: url(<?= base_url() ?>assets/web/images/person_4.jpg)">
                                     </div>
                                     <div class="pos ml-3">
                                         <p class="name">Gerald Hodson</p>
@@ -303,7 +303,7 @@
         <div class="row no-gutters">
             <div class="col-lg-6">
                 <div class="room-wrap d-md-flex ftco-animate">
-                    <a href="#" class="img" style="background-image: url(assets/web/images/room-6.jpg);"></a>
+                    <a href="#" class="img" style="background-image: url(<?= base_url() ?>assets/web/images/room-6.jpg);"></a>
                     <div class="half left-arrow d-flex align-items-center">
                         <div class="text p-4 text-center">
                             <p class="star mb-0"><span class="ion-ios-star"></span><span
@@ -320,7 +320,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="room-wrap d-md-flex ftco-animate">
-                    <a href="#" class="img" style="background-image: url(assets/web/images/room-1.jpg);"></a>
+                    <a href="#" class="img" style="background-image: url(<?= base_url() ?>assets/web/images/room-1.jpg);"></a>
                     <div class="half left-arrow d-flex align-items-center">
                         <div class="text p-4 text-center">
                             <p class="star mb-0"><span class="ion-ios-star"></span><span
@@ -339,7 +339,7 @@
             <div class="col-lg-6">
                 <div class="room-wrap d-md-flex ftco-animate">
                     <a href="#" class="img order-md-last"
-                        style="background-image: url(assets/web/images/room-2.jpg);"></a>
+                        style="background-image: url(<?= base_url() ?>assets/web/images/room-2.jpg);"></a>
                     <div class="half right-arrow d-flex align-items-center">
                         <div class="text p-4 text-center">
                             <p class="star mb-0"><span class="ion-ios-star"></span><span
@@ -357,7 +357,7 @@
             <div class="col-lg-6">
                 <div class="room-wrap d-md-flex ftco-animate">
                     <a href="#" class="img order-md-last"
-                        style="background-image: url(assets/web/images/room-3.jpg);"></a>
+                        style="background-image: url(<?= base_url() ?>assets/web/images/room-3.jpg);"></a>
                     <div class="half right-arrow d-flex align-items-center">
                         <div class="text p-4 text-center">
                             <p class="star mb-0"><span class="ion-ios-star"></span><span
@@ -375,7 +375,7 @@
 
             <div class="col-lg-6">
                 <div class="room-wrap d-md-flex ftco-animate">
-                    <a href="#" class="img" style="background-image: url(assets/web/images/room-4.jpg);"></a>
+                    <a href="#" class="img" style="background-image: url(<?= base_url() ?>assets/web/images/room-4.jpg);"></a>
                     <div class="half left-arrow d-flex align-items-center">
                         <div class="text p-4 text-center">
                             <p class="star mb-0"><span class="ion-ios-star"></span><span
@@ -392,7 +392,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="room-wrap d-md-flex ftco-animate">
-                    <a href="#" class="img" style="background-image: url(assets/web/images/room-5.jpg);"></a>
+                    <a href="#" class="img" style="background-image: url(<?= base_url() ?>assets/web/images/room-5.jpg);"></a>
                     <div class="half left-arrow d-flex align-items-center">
                         <div class="text p-4 text-center">
                             <p class="star mb-0"><span class="ion-ios-star"></span><span
@@ -427,7 +427,7 @@
         <div class="row">
             <div class="col-lg-6 col-xl-4 d-flex">
                 <div class="pricing-entry rounded d-flex ftco-animate">
-                    <div class="img" style="background-image: url(assets/web/images/menu-1.jpg);"></div>
+                    <div class="img" style="background-image: url(<?= base_url() ?>assets/web/images/menu-1.jpg);"></div>
                     <div class="desc p-4">
                         <div class="d-md-flex text align-items-start">
                             <h3><span>Grilled Crab with Onion</span></h3>
@@ -441,7 +441,7 @@
             </div>
             <div class="col-lg-6 col-xl-4 d-flex">
                 <div class="pricing-entry rounded d-flex ftco-animate">
-                    <div class="img" style="background-image: url(assets/web/images/menu-2.jpg);"></div>
+                    <div class="img" style="background-image: url(<?= base_url() ?>assets/web/images/menu-2.jpg);"></div>
                     <div class="desc p-4">
                         <div class="d-md-flex text align-items-start">
                             <h3><span>Grilled Crab with Onion</span></h3>
@@ -455,7 +455,7 @@
             </div>
             <div class="col-lg-6 col-xl-4 d-flex">
                 <div class="pricing-entry rounded d-flex ftco-animate">
-                    <div class="img" style="background-image: url(assets/web/images/menu-3.jpg);"></div>
+                    <div class="img" style="background-image: url(<?= base_url() ?>assets/web/images/menu-3.jpg);"></div>
                     <div class="desc p-4">
                         <div class="d-md-flex text align-items-start">
                             <h3><span>Grilled Crab with Onion</span></h3>
@@ -469,7 +469,7 @@
             </div>
             <div class="col-lg-6 col-xl-4 d-flex">
                 <div class="pricing-entry rounded d-flex ftco-animate">
-                    <div class="img" style="background-image: url(assets/web/images/menu-4.jpg);"></div>
+                    <div class="img" style="background-image: url(<?= base_url() ?>assets/web/images/menu-4.jpg);"></div>
                     <div class="desc p-4">
                         <div class="d-md-flex text align-items-start">
                             <h3><span>Grilled Crab with Onion</span></h3>
@@ -483,7 +483,7 @@
             </div>
             <div class="col-lg-6 col-xl-4 d-flex">
                 <div class="pricing-entry rounded d-flex ftco-animate">
-                    <div class="img" style="background-image: url(assets/web/images/menu-5.jpg);"></div>
+                    <div class="img" style="background-image: url(<?= base_url() ?>assets/web/images/menu-5.jpg);"></div>
                     <div class="desc p-4">
                         <div class="d-md-flex text align-items-start">
                             <h3><span>Grilled Crab with Onion</span></h3>
@@ -497,7 +497,7 @@
             </div>
             <div class="col-lg-6 col-xl-4 d-flex">
                 <div class="pricing-entry rounded d-flex ftco-animate">
-                    <div class="img" style="background-image: url(assets/web/images/menu-6.jpg);"></div>
+                    <div class="img" style="background-image: url(<?= base_url() ?>assets/web/images/menu-6.jpg);"></div>
                     <div class="desc p-4">
                         <div class="d-md-flex text align-items-start">
                             <h3><span>Grilled Crab with Onion</span></h3>
@@ -529,7 +529,7 @@
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
                     <a href="blog-single.html" class="block-20 rounded"
-                        style="background-image: url('assets/web/images/image_1.jpg');">
+                        style="background-image: url('<?= base_url() ?>assets/web/images/image_1.jpg');">
                     </a>
                     <div class="text mt-3 text-center">
                         <div class="meta mb-2">
@@ -545,7 +545,7 @@
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
                     <a href="blog-single.html" class="block-20 rounded"
-                        style="background-image: url('assets/web/images/image_2.jpg');">
+                        style="background-image: url('<?= base_url() ?>assets/web/images/image_2.jpg');">
                     </a>
                     <div class="text mt-3 text-center">
                         <div class="meta mb-2">
@@ -561,7 +561,7 @@
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
                     <a href="blog-single.html" class="block-20 rounded"
-                        style="background-image: url('assets/web/images/image_3.jpg');">
+                        style="background-image: url('<?= base_url() ?>assets/web/images/image_3.jpg');">
                     </a>
                     <div class="text mt-3 text-center">
                         <div class="meta mb-2">
@@ -588,40 +588,40 @@
         </div>
         <div class="row no-gutters">
             <div class="col-sm-12 col-md ftco-animate">
-                <a href="assets/web/images/insta-1.jpg" class="insta-img image-popup"
-                    style="background-image: url(assets/web/images/insta-1.jpg);">
+                <a href="<?= base_url() ?>assets/web/images/insta-1.jpg" class="insta-img image-popup"
+                    style="background-image: url(<?= base_url() ?>assets/web/images/insta-1.jpg);">
                     <div class="icon d-flex justify-content-center">
                         <span class="icon-instagram align-self-center"></span>
                     </div>
                 </a>
             </div>
             <div class="col-sm-12 col-md ftco-animate">
-                <a href="assets/web/images/insta-2.jpg" class="insta-img image-popup"
-                    style="background-image: url(assets/web/images/insta-2.jpg);">
+                <a href="<?= base_url() ?>assets/web/images/insta-2.jpg" class="insta-img image-popup"
+                    style="background-image: url(<?= base_url() ?>assets/web/images/insta-2.jpg);">
                     <div class="icon d-flex justify-content-center">
                         <span class="icon-instagram align-self-center"></span>
                     </div>
                 </a>
             </div>
             <div class="col-sm-12 col-md ftco-animate">
-                <a href="assets/web/images/insta-3.jpg" class="insta-img image-popup"
-                    style="background-image: url(assets/web/images/insta-3.jpg);">
+                <a href="<?= base_url() ?>assets/web/images/insta-3.jpg" class="insta-img image-popup"
+                    style="background-image: url(<?= base_url() ?>assets/web/images/insta-3.jpg);">
                     <div class="icon d-flex justify-content-center">
                         <span class="icon-instagram align-self-center"></span>
                     </div>
                 </a>
             </div>
             <div class="col-sm-12 col-md ftco-animate">
-                <a href="assets/web/images/insta-4.jpg" class="insta-img image-popup"
-                    style="background-image: url(assets/web/images/insta-4.jpg);">
+                <a href="<?= base_url() ?>assets/web/images/insta-4.jpg" class="insta-img image-popup"
+                    style="background-image: url(<?= base_url() ?>assets/web/images/insta-4.jpg);">
                     <div class="icon d-flex justify-content-center">
                         <span class="icon-instagram align-self-center"></span>
                     </div>
                 </a>
             </div>
             <div class="col-sm-12 col-md ftco-animate">
-                <a href="assets/web/images/insta-5.jpg" class="insta-img image-popup"
-                    style="background-image: url(assets/web/images/insta-5.jpg);">
+                <a href="<?= base_url() ?>assets/web/images/insta-5.jpg" class="insta-img image-popup"
+                    style="background-image: url(<?= base_url() ?>assets/web/images/insta-5.jpg);">
                     <div class="icon d-flex justify-content-center">
                         <span class="icon-instagram align-self-center"></span>
                     </div>
