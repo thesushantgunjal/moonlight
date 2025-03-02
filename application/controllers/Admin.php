@@ -25,6 +25,32 @@ class Admin extends CI_Controller
         $this->footer();
     }
 
+    public function category()
+    {
+        $this->navbar();
+        $this->load->view("admin/category");
+        $this->footer();
+    }
+    public function rooms()
+    {
+        $this->navbar();
+        $this->load->view("admin/rooms");
+        $this->footer();
+    }
+
+    public function booked_rooms()
+    {
+        $this->navbar();
+        $this->load->view("admin/booked_rooms");
+        $this->footer();
+    }
+
+    public function check_in()
+    {
+        $this->navbar();
+        $this->load->view("admin/check_in");
+        $this->footer();
+    }
     protected function footer()
     {
         $this->load->view("admin/footer");
