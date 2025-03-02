@@ -45,7 +45,7 @@
                     <li class="nav-item"><a href="<?= base_url() ?>in/restaurant" class="nav-link">Restaurant</a></li>
                     <li class="nav-item"><a href="<?= base_url() ?>in/about" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="<?= base_url() ?>in/contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="<?= base_url() ?>in/sign-up" class="nav-link">Sign In </a></li>
+                    <li class="nav-item"><a href="<?= base_url() ?>in/login" class="nav-link">Sign In </a></li>
                 </ul>
             </div>
         </div>
