@@ -30,4 +30,32 @@ class In extends CI_Controller
         $this->load->view("in/rooms");
         $this->footer();
     }
+
+    public function restaurant()
+    {
+        $this->navbar();
+        $this->load->view("in/restaurant");
+        $this->footer();
+    }
+
+    public function about()
+    {
+        $this->navbar();
+        $this->load->view("in/about");
+        $this->footer();
+    }
+
+    public function contact()
+    {
+        $this->navbar();
+        $this->load->view("in/contact");
+        $this->footer();
+    }
+
+    public function sign_in()
+    {
+        $this->navbar();
+        $this->load->view("in/sign_in");
+        $this->footer();
+    }
 }
