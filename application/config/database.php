@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'moonlightresort',
+	'hostname' => 'bnbyvfnenghntogqla4q-mysql.services.clever-cloud.com',
+	'username' => 'uqh4y6uwcjpn0om1',
+	'password' => 'tRnMv1Tf18r6QfoqoZeC',
+	'database' => 'bnbyvfnenghntogqla4q',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
