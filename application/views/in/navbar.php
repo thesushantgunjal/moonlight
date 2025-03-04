@@ -47,8 +47,9 @@
                                     <a href="index.php">Home</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="about.php">About Us</a>
+                                    <a href="#">About Us</a>
                                     <ul>
+                                    <li><a href="about.php">About Us</a></li>
                                         <li><a href="gallery.php">Gallery</a></li>
                                     </ul>
                                 </li>
@@ -56,12 +57,8 @@
                                     <a href="rooms.php">Rooms</a>
                                 </li>
                                 <li><a href="services.php">Services</a></li>
-                                <li><a href="restaurant.php">Restaurant</a></li>
-
-                                <li>
-                                    <a href="blog.php">Blog</a>
-
-                                </li>
+                                <!-- <li><a href="restaurant.php">Restaurant</a></li> -->
+                                <!-- <li><a href="blog.php">Blog</a></li> -->
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
