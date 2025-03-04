@@ -37,6 +37,9 @@
 
   <!-- Page CSS -->
 
+  <!-- datatable css -->
+
+
   <!-- Helpers -->
   <script src="<?= base_url() ?>/assets/admin/vendor/js/helpers.js"></script>
   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
