@@ -36,7 +36,7 @@
                 <div class="cs_main_header_in">
                     <div class="cs_main_header_left">
                         <a class="cs_site_branding" href="index.html">
-                            <img src="<?= base_url() ?>assets/web/assets/img/logo-black.svg" alt="Logo">
+                            <img width="200" height="auto" src="<?= base_url() ?>assets/web/assets/img/moonlight.png" alt="Logo">
                         </a>
                     </div>
                     <div class="cs_main_header_center">
