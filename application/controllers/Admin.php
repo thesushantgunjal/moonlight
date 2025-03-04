@@ -24,13 +24,40 @@ class Admin extends CI_Controller
         $this->load->view("admin/dashboard");
         $this->footer();
     }
-
+    // Category CRUD Start
     public function category()
     {
         $this->navbar();
-        $this->load->view("admin/category");
+        $data['category']=$this->My_model->select("category");
+        $this->load->view("admin/category",$data);
         $this->footer();
     }
+    public function save_category()
+    {
+        $this->My_model->insert("category",$_POST);
+        redirect("admin/category");
+    }
+    public function edit_category($id)
+    {
+        $this->navbar();
+        $cond=['category_id'=>$id];
+        $data['category_data']=$this->My_model->select_where("category",$cond)[0];
+        $this->load->view("admin/edit_category",$data);
+        $this->footer();
+    }
+    public function update()
+    {
+        $cond=['category_id'=>$_POST['category_id']];
+        $this->My_model->update("category",$cond,$_POST);
+        redirect("admin/category");
+    }
+    public function delete($id)
+    {
+        $cond=['category_id'=>$id];
+        $this->My_model->delete("category",$cond);
+        redirect("admin/category");
+    }
+    // Category CRUD End
     public function rooms()
     {
         $this->navbar();
