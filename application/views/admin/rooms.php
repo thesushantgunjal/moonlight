@@ -15,22 +15,24 @@
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="POST" action="<?=base_url('admin/save_category')?>">
-                   <div class="row">
-                    <div class="col-md-6">
-                    <label for="category_name" class="form-label">Enter New Category</label>
-                    <input class="form-control" type="text" id="category_name" name="category_name"
-                        placeholder="Enter New Category" autofocus required />
+                <form method="POST" action="<?= base_url('admin/save_category') ?>">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="category" class="form-label">Select Category</label>
+                            <select class="form-select" id="category" name="category" aria-label="Select category">
+                                <option selected>Choose Category</option>
+                                <option value="Standard">Standard</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="room_no" class="form-label">Enter Room Number</label>
+                            <input class="form-control" type="text" id="room_no" name="room_no"
+                                placeholder="Enter Room Number" required />
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                    <label for="rate" class="form-label">Enter Rate</label>
-                    <input class="form-control" type="text" id="rate" name="rate"
-                        placeholder="Enter Rate" autofocus required />
-                    </div>
-                   </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Save Category</button>
+                <button type="submit" class="btn btn-primary">Save Room</button>
                 </form>
             </div>
         </div>
@@ -40,8 +42,9 @@
     <div class="col-md-12 mt-3">
         <div class="card mb-6 table-responsive">
             <div class="card-body">
-                <h5 class="text-uppercase py-2">Category List</h5>
-                <table class="table table-bordered table-hover table-sm text-center display nowrap" id="example" style="width:100%">
+                <h5 class="text-uppercase py-2">Rooms List</h5>
+                <table class="table table-bordered table-hover table-sm text-center display nowrap" id="example"
+                    style="width:100%">
                     <thead>
                         <tr>
                             <th scope="col" class="fw-bold">Sr No</th>

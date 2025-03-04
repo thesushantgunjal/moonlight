@@ -11,7 +11,7 @@
     <!-- Favicon Icon -->
     <link rel="icon" href="<?= base_url() ?>assets/web/assets/img/favicon.png">
     <!-- Site Title -->
-    <title>SaePearl - Resort & Hotel HTML Template</title>
+    <title>Moonlight Resort</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/web/assets/css/fontawesome.min.css">

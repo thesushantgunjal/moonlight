@@ -52,8 +52,9 @@
                 <div class="cs_footer_grid_item">
                     <div class="cs_footer_item">
                         <div class="cs_text_widget">
-                            <img src="<?= base_url() ?>assets/web/assets/img/footer-logo.svg" alt="Logo">
-                            <p>Welcome to Seapearl, where coastal luxury meets unparallel hospitality.</p>
+                        <img width="250" height="auto" src="<?= base_url() ?>assets/web/assets/img/logo3.png"
+                        alt="Logo">
+                            <p>Welcome to The Moonlight Resorts, where coastal luxury meets unparallel hospitality.</p>
                         </div>
                     </div>
                 </div>
@@ -128,7 +129,7 @@
     <div class="cs_bottom_footer_wrap">
         <div class="container">
             <div class="cs_bottom_footer position-relative">
-                <div class="cs_copyright">OceanPearl Copyright © <span class="cs_copyright_year">2024</span> <a href="#">Laralink</a></div>
+                <div class="cs_copyright">The Moonlight Resorts © <span class="cs_copyright_year">2025</span> <a target="_blank" href="https://rudraani.in/">Rudraani Digital Media</a></div>
                 <span class="cs_scrollup cs_type_1 cs_center">
                     <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 6.18793L14.1169 7L7.93687 1.31723C7.81958 1.20941 7.66053 1.14885 7.49468 1.14885C7.32884 1.14885 7.16978 1.20941 7.0525 1.31723L0.884376 6.99022L0 6.177L6.16812 0.505163C6.51998 0.181708 6.99715 0 7.49468 0C7.99222 0 8.46938 0.181708 8.82125 0.505163L15 6.18793Z" fill="white" />
