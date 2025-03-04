@@ -8,9 +8,41 @@ class Admin extends CI_Controller
         parent::__construct();
     }
 
+    public function login_now()
+    {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+
+        $admin_data = $this->Admin_model->get_admin_by_username($email);
+
+        if ($admin_data) {
+            if (password_verify($password, $admin_data['password'])) {
+                $_SESSION['admin_id'] = $admin_data['admin_id'];
+                $_SESSION['email'] = $admin_data['email'];
+                $_SESSION['password'] = $admin_data['password'];
+                redirect(base_url() . 'admin/dashboard');
+            } else {
+                $_SESSION['error'] = 'Invalid username or password.';
+                redirect(base_url() . "admin");
+            }
+        } else {
+            $_SESSION['error'] = 'Invalid username or password';
+            redirect(base_url() . "admin");
+        }
+    }
+
+    public function logout()
+    {
+        $this->session->sess_destroy();
+        redirect(base_url('admin'));
+    }
+
     protected function navbar()
     {
-        $this->load->view("admin/navbar");
+        $admin_id = $this->session->userdata('admin_id');
+        $data['admin'] = $this->Admin_model->getAdminById($admin_id);
+        $admin_data['admin'] = $this->Admin_model->get_admin_by_id($admin_id);
+        $this->load->view("admin/navbar", $data, $admin_data);
     }
 
     public function index()
@@ -28,33 +60,33 @@ class Admin extends CI_Controller
     public function category()
     {
         $this->navbar();
-        $data['category']=$this->My_model->select("category");
-        $this->load->view("admin/category",$data);
+        $data['category'] = $this->My_model->select("category");
+        $this->load->view("admin/category", $data);
         $this->footer();
     }
     public function save_category()
     {
-        $this->My_model->insert("category",$_POST);
+        $this->My_model->insert("category", $_POST);
         redirect("admin/category");
     }
     public function edit_category($id)
     {
         $this->navbar();
-        $cond=['category_id'=>$id];
-        $data['category_data']=$this->My_model->select_where("category",$cond)[0];
-        $this->load->view("admin/edit_category",$data);
+        $cond = ['category_id' => $id];
+        $data['category_data'] = $this->My_model->select_where("category", $cond)[0];
+        $this->load->view("admin/edit_category", $data);
         $this->footer();
     }
     public function update()
     {
-        $cond=['category_id'=>$_POST['category_id']];
-        $this->My_model->update("category",$cond,$_POST);
+        $cond = ['category_id' => $_POST['category_id']];
+        $this->My_model->update("category", $cond, $_POST);
         redirect("admin/category");
     }
     public function delete($id)
     {
-        $cond=['category_id'=>$id];
-        $this->My_model->delete("category",$cond);
+        $cond = ['category_id' => $id];
+        $this->My_model->delete("category", $cond);
         redirect("admin/category");
     }
     // Category CRUD End

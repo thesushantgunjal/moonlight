@@ -55,7 +55,7 @@
 
       <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
         <div class="app-brand demo">
-          <a href="<?=base_url()?>admin/dashboard" class="app-brand-link">
+          <a href="<?= base_url() ?>admin/dashboard" class="app-brand-link">
             <span class="app-brand-logo demo">
               <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -100,6 +100,8 @@
                 </g>
               </svg>
             </span>
+
+
             <span class="app-brand-text demo menu-text fw-bold ms-2">Admin</span>
           </a>
 
@@ -113,7 +115,7 @@
         <ul class="menu-inner py-1">
           <!-- Dashboards -->
           <li class="menu-item active open">
-            <a href="<?=base_url()?>admin/dashboard" class="menu-link">
+            <a href="<?= base_url() ?>admin/dashboard" class="menu-link">
               <i class="menu-icon tf-icons bx bxs-dashboard"></i>
               <div class="text-truncate" data-i18n="Dashboards">Dashboards</div>
               <span class="badge rounded-pill bg-danger ms-auto">5</span>
@@ -121,14 +123,14 @@
           </li>
           <!-- Category -->
           <li class="menu-item">
-            <a href="<?=base_url()?>admin/category" class="menu-link">
+            <a href="<?= base_url() ?>admin/category" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-smile"></i>
               <div class="text-truncate" data-i18n="Category">Category</div>
             </a>
           </li>
           <!-- Rooms -->
           <li class="menu-item">
-              <a href="<?=base_url()?>admin/rooms" class="menu-link">
+            <a href="<?= base_url() ?>admin/rooms" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-smile"></i>
               <div class="text-truncate" data-i18n="Rooms">Rooms</div>
             </a>
@@ -142,12 +144,12 @@
 
             <ul class="menu-sub">
               <li class="menu-item">
-                <a href="<?=base_url()?>admin/booked_rooms" class="menu-link">
+                <a href="<?= base_url() ?>admin/booked_rooms" class="menu-link">
                   <div class="text-truncate" data-i18n="Booked Rooms">Booked Rooms</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="<?=base_url()?>admin/check_in" class="menu-link">
+                <a href="<?= base_url() ?>admin/check_in" class="menu-link">
                   <div class="text-truncate" data-i18n="Check In">Check In</div>
                 </a>
               </li>
@@ -171,10 +173,10 @@
           </div>
 
           <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-           
+
 
             <ul class="navbar-nav flex-row align-items-center ms-auto">
-             
+
 
               <!-- User -->
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -197,6 +199,7 @@
                         <div class="flex-grow-1">
                           <h6 class="mb-0">John Doe</h6>
                           <small class="text-muted">Admin</small>
+                          <?php if (!isset($_SESSION['admin_id'])) redirect('/admin/'); ?>
                         </div>
                       </div>
                     </a>
@@ -216,7 +219,7 @@
                     <div class="dropdown-divider my-1"></div>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);">
+                    <a class="dropdown-item" href="<?= base_url() ?>admin/logout">
                       <i class="bx bx-power-off bx-md me-3"></i><span>Log Out</span>
                     </a>
                   </li>

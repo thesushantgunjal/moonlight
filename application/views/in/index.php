@@ -5,7 +5,7 @@
             <div class="cs_slider_wrapper">
                 <div class="cs_slide">
                     <div class="cs_hero cs_style_7 cs_primary_bg cs_center text-center position-relative">
-                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/hero_bg_10.jpg"></div>
+                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider1.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
                                 <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO SEAPEARL</span></p>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="cs_slide">
                     <div class="cs_hero cs_style_7 cs_primary_bg cs_center text-center position-relative">
-                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/hero_bg_11.jpg"></div>
+                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
                                 <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO SEAPEARL</span></p>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="cs_slide">
                     <div class="cs_hero cs_style_7 cs_primary_bg cs_center text-center position-relative">
-                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/hero_bg_10.jpg"></div>
+                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider3.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
                                 <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO SEAPEARL</span></p>
@@ -87,9 +87,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="cs_slide">
+                <!-- <div class="cs_slide">
                     <div class="cs_hero cs_style_7 cs_primary_bg cs_center text-center position-relative">
-                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/hero_bg_11.jpg"></div>
+                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
                                 <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO SEAPEARL</span></p>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="cs_pagination cs_style_1 cs_color_1 cs_type_4 cs_mobile_show_md"></div>
