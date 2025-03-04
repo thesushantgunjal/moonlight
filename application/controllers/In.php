@@ -27,7 +27,12 @@ class In extends CI_Controller
         $this->load->view("in/rooms");
         $this->footer();
     }
-
+    public function room_detail()
+    {
+        $this->navbar();
+        $this->load->view("in/room_detail");
+        $this->footer();
+    }
     public function services()
     {
         $this->navbar();
