@@ -56,6 +56,9 @@
 
 <!-- endbuild -->
 
+<!-- datatables -->
+
+
 <!-- Vendors JS -->
 <script src="<?= base_url() ?>/assets/admin/vendor/libs/apex-charts/apexcharts.js"></script>
 
