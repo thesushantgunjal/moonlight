@@ -138,8 +138,8 @@
                         </div>
                     </div>
                     <div class="cs_main_header_right">
-                        <a href="rooms.html" class="cs_btn cs_style_2 cs_medium cs_radius_20 cs_fs_15">
-                            Reservation
+                        <a href="<?=base_url()?>in/sign_in" class="cs_btn cs_style_2 cs_medium cs_radius_20 cs_fs_15">
+                            Sign In
                         </a>
                     </div>
                 </div>
