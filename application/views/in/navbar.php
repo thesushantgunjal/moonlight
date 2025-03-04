@@ -35,7 +35,7 @@
             <div class="container-fluid">
                 <div class="cs_main_header_in">
                     <div class="cs_main_header_left">
-                        <a class="cs_site_branding" href="index.php">
+                        <a class="cs_site_branding" href="index">
                             <img width="200" height="auto" src="<?= base_url() ?>assets/web/assets/img/moonlight.png"
                                 alt="Logo">
                         </a>
@@ -44,27 +44,27 @@
                         <div class="cs_nav cs_fs_13 cs_semibold">
                             <ul class="cs_nav_list">
                                 <li class="">
-                                    <a href="index.php">Home</a>
+                                    <a href="<?= base_url() ?>in/index">Home</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#">About Us</a>
+                                    <a href="<?= base_url() ?>#">About Us</a>
                                     <ul>
-                                    <li><a href="about.php">About Us</a></li>
-                                        <li><a href="gallery.php">Gallery</a></li>
+                                        <li><a href="<?= base_url() ?>in/about">About Us</a></li>
+                                        <li><a href="<?= base_url() ?>in/gallery">Gallery</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="rooms.php">Rooms</a>
+                                    <a href="<?= base_url() ?>in/rooms">Rooms</a>
                                 </li>
-                                <li><a href="services.php">Services</a></li>
-                                <!-- <li><a href="restaurant.php">Restaurant</a></li> -->
-                                <!-- <li><a href="blog.php">Blog</a></li> -->
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="<?= base_url() ?>in/services">Services</a></li>
+                                <!-- <li><a href="<?= base_url() ?>in/restaurant">Restaurant</a></li> -->
+                                <!-- <li><a href="<?= base_url() ?>in/blog">Blog</a></li> -->
+                                <li><a href="<?= base_url() ?>in/contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="cs_main_header_right">
-                        <a href="<?=base_url()?>in/sign_in" class="cs_btn cs_style_2 cs_medium cs_radius_20 cs_fs_15">
+                        <a href="<?= base_url() ?>in/sign_in" class="cs_btn cs_style_2 cs_medium cs_radius_20 cs_fs_15">
                             Sign In
                         </a>
                     </div>

@@ -14,6 +14,12 @@ class In extends CI_Controller
         $this->load->view('in/index');
         $this->footer();
     }
+    public function about()
+    {
+        $this->navbar();
+        $this->load->view("in/about");
+        $this->footer();
+    }
 
     public function rooms()
     {
@@ -22,19 +28,27 @@ class In extends CI_Controller
         $this->footer();
     }
 
-    public function restaurant()
+    public function services()
     {
         $this->navbar();
-        $this->load->view("in/restaurant");
+        $this->load->view("in/services");
         $this->footer();
     }
 
-    public function about()
+    public function gallery()
     {
         $this->navbar();
-        $this->load->view("in/about");
+        $this->load->view("in/gallery");
         $this->footer();
     }
+
+
+    // public function restaurant()
+    // {
+    //     $this->navbar();
+    //     $this->load->view("in/restaurant");
+    //     $this->footer();
+    // }
 
     public function contact()
     {
