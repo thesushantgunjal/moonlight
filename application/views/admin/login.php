@@ -43,6 +43,9 @@
                                     <div class="invalid-feedback">Please enter your password.</div>
                                 </div>
                             </div>
+                            <?php if ($this->session->userdata('error')): ?>
+                                <p style="color: red;"><?= $this->session->userdata('error'); ?></p>
+                            <?php endif; ?>
                             <div class="mb-3">
                                 <button class="btn btn-primary d-grid w-100" type="submit">Login</button>
                             </div>
@@ -66,11 +69,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <script>
-        (function () {
+        (function() {
             'use strict'
             var forms = document.querySelectorAll('.needs-validation')
-            Array.prototype.slice.call(forms).forEach(function (form) {
-                form.addEventListener('submit', function (event) {
+            Array.prototype.slice.call(forms).forEach(function(form) {
+                form.addEventListener('submit', function(event) {
                     if (!form.checkValidity()) {
                         event.preventDefault()
                         event.stopPropagation()
