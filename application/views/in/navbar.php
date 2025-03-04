@@ -26,7 +26,7 @@
 <body>
     <!-- Start Preloader -->
     <div class="cs_preloader cs_accent_color cs_primary_font">
-        <div class="cs_preloader_in">S</div>
+        <div class="cs_preloader_in">M</div>
     </div>
     <!-- End Preloader -->
     <!-- Start Header Section -->
