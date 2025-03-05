@@ -87,34 +87,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="cs_slide">
-                    <div class="cs_hero cs_style_7 cs_primary_bg cs_center text-center position-relative">
-                        <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
-                        <div class="container position-relative cs_zindex_3">
-                            <div class="cs_hero_text">
-                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO SEAPEARL</span></p>
-                                <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">Unveiling Coastal Elegance <br>and Tranquility</h1>
-                                <div class="cs_hero_btn">
-                                    <a href="about.html" class="cs_btn cs_style_2 cs_white_btn cs_medium cs_radius_20 cs_fs_15">
-                                        Learn More
-                                        <span>
-                                            <i>
-                                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                </svg>
-                                            </i>
-                                            <i>
-                                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                </svg>
-                                            </i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <div class="cs_pagination cs_style_1 cs_color_1 cs_type_4 cs_mobile_show_md"></div>
