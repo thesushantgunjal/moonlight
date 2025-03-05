@@ -15,11 +15,11 @@
             <div class="cs_pr_100">
               <div class="cs_section_heading cs_style_1">
                 <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">GETTING TOUCH</p>
-                <h2 class="cs_fs_67 cs_mb_18">Contact Seapearl Resort Today</h2>
-                <p class="mb-0">Reach out to us via phone, email, or through our convenient online form.  We look forward to hearing from you and helping you plan your  unforgettable experience at Seapearl Resort.</p>
+                <h2 class="cs_fs_67 cs_mb_18">Contact The Moonlight Resort Today</h2>
+                <p class="mb-0">Reach out to us via phone, email, or our convenient online form. We look forward to hearing from you and helping you plan your unforgettable experience at The Moonlight Resort.</p>
               </div>
               <div class="cs_height_37 cs_height_lg_37"></div>
-              <form action="#" class="cs_form cs_style_2">
+              <form action="#" method="post" class="cs_form cs_style_2">
                 <label>Full Name*</label>
                 <input type="text" class="cs_form_field_2 cs_radius_20">
                 <div class="cs_height_16 cs_height_lg_16"></div>
