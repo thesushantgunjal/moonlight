@@ -7694,7 +7694,7 @@ a.ui-button:active,
           transform: scale(1);
 }
 /* new css for overlay div */
-/* .cs_hero_bg::before
+.cs_hero_bg::before
 {
   content:"";
   width: 100%;
@@ -7704,7 +7704,7 @@ a.ui-button:active,
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
-} */
+}
 /* new css for overlay div end*/
 .cs_hero.cs_style_3 .slick-active .cs_hero_bg {
   -webkit-transform: scale(1.2);
