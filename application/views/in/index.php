@@ -8,8 +8,8 @@
                         <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider1.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
-                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO MOONLIGHT RESORT</span></p>
-                                <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">Unveiling Coastal Elegance <br>and Tranquility</h1>
+                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO MOONLIGHT RESORTS</span></p>
+                                <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">A Heaven Of Luxury <br> & Purity</h1>
                                 <div class="cs_hero_btn">
                                     <a href="about.html" class="cs_btn cs_style_2 cs_white_btn cs_medium cs_radius_20 cs_fs_15">
                                         Learn More
@@ -36,8 +36,8 @@
                         <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
-                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO SEAPEARL</span></p>
-                                <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">Unveiling Coastal Elegance <br>and Tranquility</h1>
+                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO MOONLIGHT RESORTS</span></p>
+                                <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">A Heaven Of Luxury <br> & Purity</h1>
                                 <div class="cs_hero_btn">
                                     <a href="about.html" class="cs_btn cs_style_2 cs_white_btn cs_medium cs_radius_20 cs_fs_15">
                                         Learn More
@@ -64,8 +64,8 @@
                         <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider3.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
-                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO SEAPEARL</span></p>
-                                <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">Unveiling Coastal Elegance <br>and Tranquility</h1>
+                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO MOONLIGHT RESORTS</span></p>
+                                <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">A Heaven Of Luxury <br> & Purity</h1>
                                 <div class="cs_hero_btn">
                                     <a href="about.html" class="cs_btn cs_style_2 cs_white_btn cs_medium cs_radius_20 cs_fs_15">
                                         Learn More
@@ -195,7 +195,7 @@
                 <div class="col-lg-7">
                     <div class="cs_pr_110">
                         <a href="https://www.youtube.com/embed/UJEUwEJ6gH4" class="cs_video_block cs_style_1 cs_type_3 cs_video_open text-center cs_center position-relative cs_radius_5">
-                            <div class="cs_video_block_bg h-100 w-100 position-absolute start-0 top-0 cs_bg_filed cs_primary_bg" data-src="<?= base_url() ?>assets/web/assets/img/feature_img_9.jpg"></div>
+                            <div class="cs_video_block_bg h-100 w-100 position-absolute start-0 top-0 cs_bg_filed cs_primary_bg" data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
                             <span class="cs_play_btn_2 cs_center rounded-circle">
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_249_123_587)">
@@ -215,9 +215,9 @@
                     <div class="cs_section_heading cs_style_1">
                         <div class="cs_section_heading">
                             <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">ABOUT US</p>
-                            <h2 class="cs_fs_67 cs_mb_28">Your Gateway to Unforgettable Experiences</h2>
+                            <h2 class="cs_fs_67 cs_mb_28">The Moonlight Resort By Blackbird</h2>
                             <h2 class="cs_about_experience_text_1 cs_fs_89 cs_accent_color">20+ yrs in Hospitality</h2>
-                            <p class="cs_mb_46 cs_mb_lg_35">At Seapearl, we're your passport to unforgettable moments. With luxurious accommodations, top-notch amenities, and attentive service, we ensure every stay is exceptional. Whether you seek relaxation or adventure, Seapearl promises an experience beyond compare.</p>
+                            <p class="cs_mb_46 cs_mb_lg_35">A luxurious haven set in serene surroundings, offering 1001% pure vegetarian cuisine, premium accommodations, and world-class hospitality, ensuring an unforgettable experience for all guests.</p>
                             <a href="restaurant.html" class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_20 cs_fs_15">
                                 <b>Learn More</b>
                                 <span>
