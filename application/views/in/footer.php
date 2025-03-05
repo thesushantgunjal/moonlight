@@ -17,7 +17,7 @@
                             </defs>
                         </svg>
                     </span>
-                    <h2 class="cs_fs_50 cs_mb_26">For Exclusive Offers and Updates Subscribe Our SeaPearl Newsletter!</h2>
+                    <h2 class="cs_fs_50 cs_mb_26">Subscribe for exclusive updates, special offers, and unforgettable experiences!</h2>
                     <form action="#" class="cs_newsletter_form position-relative">
                         <input type="email" class="cs_newsletter_input cs_radius_5" placeholder="Enter Your Email Address">
                         <button class="cs_btn cs_style_2 cs_medium cs_radius_5 cs_fs_15">
@@ -52,8 +52,8 @@
                 <div class="cs_footer_grid_item">
                     <div class="cs_footer_item">
                         <div class="cs_text_widget">
-                        <img width="250" height="auto" src="<?= base_url() ?>assets/web/assets/img/logo3.png"
-                        alt="Logo">
+                            <img width="250" height="auto" src="<?= base_url() ?>assets/web/assets/img/logo3.png"
+                                alt="Logo">
                             <p>Welcome to The Moonlight Resorts, where coastal luxury meets unparallel hospitality.</p>
                         </div>
                     </div>
@@ -63,10 +63,10 @@
                         <h2 class="cs_widget_title cs_fs_28 cs_white_color">Contact Us</h2>
                         <ul class="cs_menu_widget cs_mp0">
                             <li>
-                                <p class="cs_mb_22">452 15h Street, Office 741, Ohio, De 47754, USA</p>
+                                <p class="cs_mb_22">Baroli Toll Naka, Sanwer Road, Indore. Madhay Pradesh 455336.</p>
                             </li>
-                            <li class="cs_white_color">Call : <a href="tel:+00(244)14-50-774">+00(244)14-50-774</a></li>
-                            <li class="cs_white_color">Email : <a href="https://html.laralink.com/cdn-cgi/l/email-protection#076e696168476864626669776266756b2964686a"><span class="__cf_email__" data-cfemail="4821262e2708272b2d2926382d293a24662b2725">[email&#160;protected]</span></a></li>
+                            <li class="cs_white_color">Call : <a href="tel:+91 7583018000">+91 7583018000</a></li>
+                            <li class="cs_white_color">Email : <a href="mailto:moonlight@gmail.com"><span class="__cf_email__" data-cfemail="4821262e2708272b2d2926382d293a24662b2725">moonlight@gmail.com</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,12 +74,12 @@
                     <div class="cs_footer_item">
                         <h2 class="cs_widget_title cs_fs_28 cs_white_color">Links</h2>
                         <ul class="cs_menu_widget cs_mp0">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="rooms.html">Booking</a></li>
-                            <li><a href="spa-wellness.html">SPA & Wellness</a></li>
-                            <li><a href="restaurant.html">Restaurant</a></li>
-                            <li><a href="blog.html">News & Media</a></li>
+                            <li><a href="<?= base_url() ?>in/about">About Us</a></li>
+                            <li><a href="<?= base_url() ?>in/rooms">Booking</a></li>
+                            <li><a href="services">Services</a></li>
+                            <li><a href="sign_in">Sign In</a></li>
+                            <!-- <li><a href="<?= base_url() ?>in/restaurant">Restaurant</a></li> -->
+                            <!-- <li><a href="blog.html">News & Media</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                                     </span>
                                 </button>
                             </form>
-                            <p class="cs_newsletter_subtitle cs_ternary_color cs_mb_30">Stay In the Loop & unlock exclusive Experiences. Subscribe for Exclusive Updates and Offers!</p>
+                            <p class="cs_newsletter_subtitle cs_ternary_color cs_mb_30"><strong>Stay in the Loop & Unlock Exclusive Experiences</strong> Subscribe now for exclusive updates, special offers, and unforgettable moments at The Moonlight Resorts!</p>
                             <div class="cs_social_btns cs_style_1">
                                 <a href="#" class="cs_center">
                                     <i class="fa-brands fa-linkedin-in"></i>

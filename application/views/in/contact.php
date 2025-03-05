@@ -68,8 +68,8 @@
                 <img src="<?=base_url()?>assets/web/assets/img/icons/contact_icon_1.svg" alt="Icon">
               </div>
               <div class="cs_iconbox_right">
-                <h3 class="cs_fs_28 cs_mb_5">SeaPearl Address</h3>
-                <p class="mb-0">452 15h Street, Office 741, Ohio, De 47754, USA</p>
+                <h3 class="cs_fs_28 cs_mb_5">Resort Address</h3>
+                <p class="mb-0">Baroli Toll Naka, Sanwer Road, Indore.</p>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
               </div>
               <div class="cs_iconbox_right">
                 <h3 class="cs_fs_28 cs_mb_5">Email address</h3>
-                <p class="mb-0"><a href="https://html.laralink.com/cdn-cgi/l/email-protection#c1a8afa7ae81b2a4a0b1a4a0b3adefa2aeac"><span class="__cf_email__" data-cfemail="147d7a727b5467717564717566783a777b79">[email&#160;protected]</span></a></p>
+                <p class="mb-0"><a href="mailto:moonlight@gmail.com"><span class="__cf_email__" data-cfemail="147d7a727b5467717564717566783a777b79">moonlight@gmail.com</span></a></p>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
               </div>
               <div class="cs_iconbox_right">
                 <h3 class="cs_fs_28 cs_mb_5">For Reservation</h3>
-                <p class="mb-0"><a href="tel:+214544512009">+21 454 451 2009</a></p>
+                <p class="mb-0"><a href="tel:+917583018000">+91 7583018000</a></p>
               </div>
             </div>
           </div>
