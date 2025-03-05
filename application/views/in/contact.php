@@ -20,13 +20,13 @@
               </div>
               <div class="cs_height_37 cs_height_lg_37"></div>
               <form action="#" method="post" class="cs_form cs_style_2">
-                <label>Full Name*</label>
+                <label>Full Name</label>
                 <input type="text" class="cs_form_field_2 cs_radius_20">
                 <div class="cs_height_16 cs_height_lg_16"></div>
-                <label>Email*</label>
+                <label>Email</label>
                 <input type="text" class="cs_form_field_2 cs_radius_20">
                 <div class="cs_height_16 cs_height_lg_16"></div>
-                <label>Write Your Comment*</label>
+                <label>Write Your Comment</label>
                 <textarea cols="30" rows="6" class="cs_form_field_2 cs_radius_20"></textarea>
                 <div class="cs_height_25 cs_height_lg_25"></div>
                 <button class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_20 cs_fs_15">
