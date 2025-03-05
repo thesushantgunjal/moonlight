@@ -83,6 +83,13 @@ class In extends CI_Controller
         $this->load->view("in/check_availability");
         $this->footer();
     }
+
+    public function complete_reservation()
+    {
+        $this->navbar();
+        $this->load->view("in/complete_reservation");
+        $this->footer();
+    }
     protected function footer()
     {
         $this->load->view("in/footer");
