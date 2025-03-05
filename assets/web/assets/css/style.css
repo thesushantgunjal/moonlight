@@ -7816,7 +7816,8 @@ a.ui-button:active,
   bottom: 0;
   width: 100%;
   left: 0;
-  background: rgba(170, 132, 83, 0.8);
+  /* background: rgba(170, 132, 83, 0.8); */
+  background-color: #808000 !important;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
