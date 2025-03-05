@@ -65,7 +65,7 @@
                             <li>
                                 <p class="cs_mb_22">Baroli Toll Naka, Sanwer Road, Indore. Madhay Pradesh 455336.</p>
                             </li>
-                            <li class="cs_white_color">Call : <a href="tel:+91 7583018000">+91 7583018000</a></li>
+                            <li class="cs_white_color">Call : <a href="tel:+917583018000">+91 7583018000</a></li>
                             <li class="cs_white_color">Email : <a href="mailto:moonlight@gmail.com"><span class="__cf_email__" data-cfemail="4821262e2708272b2d2926382d293a24662b2725">moonlight@gmail.com</span></a></li>
                         </ul>
                     </div>
