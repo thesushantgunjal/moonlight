@@ -196,26 +196,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="cs_form_item">
-                    <label class="cs_white_color">Children :</label>
-                    <div class="cs_quantity_wrap">
-                        <span class="cs_quantity_btn" data-initial-number="00"></span>
-                        <div class="cs_quantity_dropdown cs_primary_color">
-                            <div class="cs_quantity_dropdown_item">
-                                <span class="cs_quantity_title">Children :</span>
-                                <div class="cs_count">
-                                    <button class="cs_quantity_decrement cs_center" type="button">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </button>
-                                    <span class="cs_quantity_number" data-min-value="0" data-max-value="10"></span>
-                                    <button class="cs_quantity_increment cs_center" type="button">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="cs_form_item_btn">
                     <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">Check
                         Availability</button>
