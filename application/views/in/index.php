@@ -234,6 +234,7 @@
             <div class="row align-items-center cs_gap_y_40">
                 <div class="col-lg-7">
                     <div class="cs_pr_110">
+<<<<<<< HEAD
                         <a href="https://www.youtube.com/embed/UJEUwEJ6gH4"
                             class="cs_video_block cs_style_1 cs_type_3 cs_video_open text-center cs_center position-relative cs_radius_5">
                             <div class="cs_video_block_bg h-100 w-100 position-absolute start-0 top-0 cs_bg_filed cs_primary_bg"
@@ -253,6 +254,27 @@
                                     </defs>
                                 </svg>
                             </span>
+=======
+                        <a href="#" class="cs_video_block cs_style_1 cs_type_3 cs_video_open text-center cs_center position-relative cs_radius_5">
+
+                        <div class="cs_video_block_bg h-100 w-100 position-absolute start-0 top-0 cs_bg_filed cs_primary_bg"
+                            data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
+                        <span class="cs_play_btn_2 cs_center rounded-circle">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_249_123_587)">
+                                    <path
+                                        d="M29.8842 11.6214L15.9746 1.42181C14.8882 0.626264 13.6027 0.147096 12.2606 0.0374155C10.9185 -0.0722649 9.57229 0.191827 8.37111 0.800417C7.16994 1.40901 6.16075 2.33832 5.4554 3.48536C4.75006 4.63239 4.37611 5.95234 4.37501 7.29889V27.7083C4.37291 29.0561 4.74491 30.3781 5.44958 31.5271C6.15426 32.6761 7.16396 33.607 8.36631 34.2162C9.56866 34.8254 10.9165 35.089 12.2597 34.9776C13.603 34.8662 14.889 34.3843 15.9746 33.5854L29.8842 23.3858C30.8071 22.7084 31.5576 21.8233 32.0749 20.802C32.5922 19.7808 32.8618 18.652 32.8618 17.5072C32.8618 16.3624 32.5922 15.2337 32.0749 14.2124C31.5576 13.1911 30.8071 12.306 29.8842 11.6287V11.6214Z"
+                                        fill="white"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_249_123_587">
+                                        <rect width="35" height="35" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+>>>>>>> ab7c2716d202a13d9abc81249c8d3abe18793461
                         </a>
                     </div>
                 </div>
@@ -312,8 +334,10 @@
         <div class="cs_height_80 cs_height_lg_50"></div>
     </div>
     <div class="container">
-        <div class="cs_grid_style_4">
+        <div class="row">
+            <div class="col-md-4 p-2">
             <div class="cs_grid_item">
+<<<<<<< HEAD
                 <a href="room-details.html" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                     <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_17.jpg"
                         alt="Room">
@@ -337,54 +361,83 @@
                         alt="Room">
                     <span
                         class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">$450/Night</span>
+=======
+                <a href="<?=base_url()?>in/room_detail" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
+                    <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_20.jpg"
+                        alt="Room">
+                    <span
+                        class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.2200</span>
+>>>>>>> ab7c2716d202a13d9abc81249c8d3abe18793461
                     <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
                         <div>
                             <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Standard Room</h2>
                             <ul class="cs_card_list cs_mp_0 cs_ternary_color">
-                                <li>110 Sq</li>
-                                <li>3-5 Guests</li>
+                                <li>24/7 Service</li>
                                 <li>Free Wi-Fi</li>
+                                <li>Jain-Friendly</li>
                             </ul>
                         </div>
                     </div>
                 </a>
             </div>
+<<<<<<< HEAD
             <div class="cs_grid_item">
                 <a href="room-details.html" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                     <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_19.jpg"
                         alt="Room">
                     <span
                         class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">$520/Night</span>
+=======
+            </div>
+            <div class="col-md-4 p-2">
+                <div class="cs_grid_item">
+                <a href="<?=base_url()?>in/room_detail" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
+                    <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_19.jpg"
+                        alt="Room">
+                    <span
+                        class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.2500</span>
+>>>>>>> ab7c2716d202a13d9abc81249c8d3abe18793461
                     <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
                         <div>
-                            <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Superior Room</h2>
+                            <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Deluxe Room</h2>
                             <ul class="cs_card_list cs_mp_0 cs_ternary_color">
-                                <li>110 Sq</li>
-                                <li>3-5 Guests</li>
+                                <li>24/7 Service</li>
                                 <li>Free Wi-Fi</li>
+                                <li>Jain-Friendly</li>
                             </ul>
                         </div>
                     </div>
                 </a>
             </div>
+            </div>
+            <div class="col-md-4 p-2">
             <div class="cs_grid_item">
+<<<<<<< HEAD
                 <a href="room-details.html" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                     <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_20.jpg"
                         alt="Room">
                     <span
                         class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">$620/Night</span>
+=======
+                <a href="<?=base_url()?>in/room_detail" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
+                    <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_21.jpg"
+                        alt="Room">
+                    <span
+                        class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.3000</span>
+>>>>>>> ab7c2716d202a13d9abc81249c8d3abe18793461
                     <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
                         <div>
-                            <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Sea View Suite</h2>
+                            <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Premium Room</h2>
                             <ul class="cs_card_list cs_mp_0 cs_ternary_color">
-                                <li>110 Sq</li>
-                                <li>3-5 Guests</li>
+                                <li>24/7 Service</li>
                                 <li>Free Wi-Fi</li>
+                                <li>Jain-Friendly</li>
                             </ul>
                         </div>
                     </div>
                 </a>
             </div>
+<<<<<<< HEAD
             <div class="cs_grid_item">
                 <a href="room-details.html" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                     <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_21.jpg"
@@ -402,6 +455,10 @@
                         </div>
                     </div>
                 </a>
+=======
+            </div>
+                
+>>>>>>> ab7c2716d202a13d9abc81249c8d3abe18793461
             </div>
         </div>
     </div>
