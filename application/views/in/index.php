@@ -8,7 +8,7 @@
                         <div class="cs_hero_bg cs_bg_filed h-100 w-100 position-absolute top-0 start-0" data-src="<?= base_url() ?>assets/web/assets/img/slider1.jpg"></div>
                         <div class="container position-relative cs_zindex_3">
                             <div class="cs_hero_text">
-                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO MOONLIGHT</span></p>
+                                <p class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium"><span>WELCOME TO MOONLIGHT RESORT</span></p>
                                 <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">Unveiling Coastal Elegance <br>and Tranquility</h1>
                                 <div class="cs_hero_btn">
                                     <a href="about.html" class="cs_btn cs_style_2 cs_white_btn cs_medium cs_radius_20 cs_fs_15">
