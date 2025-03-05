@@ -1,7 +1,7 @@
     <!-- Start Page Heading Section -->
     <section class="cs_page_heading cs_primary_bg cs_bg_filed cs_center" data-src="<?= base_url() ?>assets/web/assets/img/page_heading_bg_rooms.jpg">
       <div class="container">
-        <h1 class="cs_white_color text-center mb-0 cs_fs_67">Chose Your Rooms</h1>
+        <h1 class="cs_white_color text-center mb-0 cs_fs_67">Choose Your Rooms</h1>
       </div>
     </section>
     <!-- End Page Heading Section -->
@@ -171,12 +171,12 @@
             </div>
           </div>
           <div class="cs_form_item">
-            <label class="cs_white_color">Adults :</label>
+            <label class="cs_white_color">Pepole :</label>
             <div class="cs_quantity_wrap">
               <span class="cs_quantity_btn" data-initial-number="1"></span>
               <div class="cs_quantity_dropdown cs_primary_color">
                 <div class="cs_quantity_dropdown_item">
-                  <span class="cs_quantity_title">Adults :</span>
+                  <span class="cs_quantity_title">Pepole :</span>
                   <div class="cs_count">
                     <button class="cs_quantity_decrement cs_center" type="button">
                       <i class="fa-solid fa-minus"></i>
