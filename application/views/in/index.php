@@ -143,8 +143,8 @@
     </div>
     <div class="cs_hero_7_form">
         <div class="container">
-            <form action="https://html.laralink.com/seapearl/search-result.html"
-                class="cs_form cs_style_4 cs_type_4 position-relative cs_zindex_10">
+            <form action="#"
+                class="cs_form cs_style_4 cs_type_4 position-relative cs_zindex_10" method="post">
                 <div class="cs_date_items">
                     <input type="text" name="datetimes" class="cs_datetimes">
                     <div class="cs_form_item cs_date_item">

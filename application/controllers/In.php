@@ -76,6 +76,13 @@ class In extends CI_Controller
         $this->footer();
     }
 
+
+    public function check_availability()
+    {
+        $this->navbar();
+        $this->load->view("in/check_availability");
+        $this->footer();
+    }
     protected function footer()
     {
         $this->load->view("in/footer");
