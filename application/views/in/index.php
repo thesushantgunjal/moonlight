@@ -424,16 +424,6 @@
                                 <p class="cs_iconbox_subtitle mb-0">Enjoy authentic, high-quality vegetarian and Jain delicacies.</p>
                             </div>
                         </div>
-                        <!-- <div class="cs_slide">
-                            <div class="cs_iconbox cs_style_3 cs_radius_5 cs_white_bg">
-                                <div class="cs_iconbox_icon cs_mb_29 cs_center cs_radius_5 cs_white_bg"><img
-                                        src="<?= base_url() ?>assets/web/assets/img/icons/massage.svg" alt="Icon"></div>
-                                <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Spa &amp; Wellness</h3>
-                                <p class="cs_iconbox_subtitle mb-0">Discover serenity at our spa. Indulge in blissful
-                                    treatments and unwind in a haven of relaxation. Your path to rejuvenation starts
-                                    here</p>
-                            </div>
-                        </div> -->
                         <div class="cs_slide">
                             <div class="cs_iconbox cs_style_3 cs_radius_5 cs_white_bg">
                                 <div class="cs_iconbox_icon cs_mb_29 cs_center cs_radius_5 cs_white_bg"><img
@@ -549,7 +539,7 @@
 <!-- End Gallery Section -->
 
 <!-- Start Features Section -->
-<section>
+<!-- <section>
     <div class="cs_height_141 cs_height_lg_75"></div>
     <div class="container">
         <div class="cs_section_heading cs_style_1 text-center">
@@ -830,7 +820,7 @@
         </div>
     </div>
     <div class="cs_height_150 cs_height_lg_80"></div>
-</section>
+</section> -->
 <!-- End Features Section -->
 
 <!-- Start Testimonial Section -->
@@ -1018,7 +1008,7 @@
         <div class="cs_section_heading cs_style_1 text-center">
             <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">EXCLUSIVE
                 OFFER</p>
-            <h2 class="cs_fs_67 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Elevate Your Seapearl
+            <h2 class="cs_fs_67 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Elevate Your Moonlight
                 Experience</h2>
         </div>
         <div class="cs_height_80 cs_height_lg_50"></div>
@@ -1027,17 +1017,16 @@
         <div class="row cs_row_gap_60 cs_gap_y_40">
             <div class="col-lg-4">
                 <div class="cs_card cs_style_6 text-center cs_radius_5 overflow-hidden">
-                    <a href="room-details.html" class="cs_card_thumb overflow-hidden d-block position-relative">
+                    <a href="<?=base_url()?>" class="cs_card_thumb overflow-hidden d-block position-relative">
                         <img src="<?= base_url() ?>assets/web/assets/img/feature_img_18.jpg" alt="Feature"
                             class="w-100">
                     </a>
                     <div class="cs_card_info">
                         <h2 class="cs_card_title cs_fs_38 cs_mb_19">
-                            <a href="room-details.html">Winter Package</a>
+                            <a href="<?=base_url()?>">Discounts for Weddings & Events</a>
                         </h2>
-                        <p class="cs_card_subtitle cs_mb_36">2 days & 3 Nights Accommodation For 2 person Only $450 with
-                            morning breakfast</p>
-                        <a href="room-details.html"
+                        <p class="cs_card_subtitle cs_mb_36"> Book your weddings & events in advance and enjoy special savings.</p>
+                        <a href="<?=base_url()?>"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
@@ -1064,17 +1053,16 @@
             </div>
             <div class="col-lg-4">
                 <div class="cs_card cs_style_6 text-center cs_radius_5 overflow-hidden">
-                    <a href="room-details.html" class="cs_card_thumb overflow-hidden d-block position-relative">
+                    <a href="<?=base_url()?>" class="cs_card_thumb overflow-hidden d-block position-relative">
                         <img src="<?= base_url() ?>assets/web/assets/img/feature_img_19.jpg" alt="Feature"
                             class="w-100">
                     </a>
                     <div class="cs_card_info">
                         <h2 class="cs_card_title cs_fs_38 cs_mb_19">
-                            <a href="room-details.html">Honeymoon Package</a>
+                            <a href="<?=base_url()?>"> Long-Stay & Corporate Packages</a>
                         </h2>
-                        <p class="cs_card_subtitle cs_mb_36">5 days & 4 Nights Accommodation For 2 person Only $699 with
-                            Dinner</p>
-                        <a href="room-details.html"
+                        <p class="cs_card_subtitle cs_mb_36"> Ideal for business travelers and extended stays with exclusive benefits.</p>
+                        <a href="<?=base_url()?>"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
@@ -1101,17 +1089,16 @@
             </div>
             <div class="col-lg-4">
                 <div class="cs_card cs_style_6 text-center cs_radius_5 overflow-hidden">
-                    <a href="room-details.html" class="cs_card_thumb overflow-hidden d-block position-relative">
+                    <a href="<?=base_url()?>" class="cs_card_thumb overflow-hidden d-block position-relative">
                         <img src="<?= base_url() ?>assets/web/assets/img/feature_img_18.jpg" alt="Feature"
                             class="w-100">
                     </a>
                     <div class="cs_card_info">
                         <h2 class="cs_card_title cs_fs_38 cs_mb_19">
-                            <a href="room-details.html">25% Offer on Buffet</a>
+                            <a href="<?=base_url()?>">Seasonal & Festival Deals</a>
                         </h2>
-                        <p class="cs_card_subtitle cs_mb_36">Enjoy a 25% discount on our delectable buffet at Seapearl
-                            Resort.</p>
-                        <a href="room-details.html"
+                        <p class="cs_card_subtitle cs_mb_36">Celebrate special occasions with exciting discounts and offers.</p>
+                        <a href="<?=base_url()?>"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
