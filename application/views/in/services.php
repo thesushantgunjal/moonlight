@@ -51,7 +51,8 @@
                 <div class="cs_iconbox cs_style_1">
                     <div class="cs_iconbox_icon cs_mb_29"><img
                             src="<?= base_url() ?>assets/web/assets/img/icons/massage.svg" alt="Icon"></div>
-                    <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Perfect for Weddings, Corporate Events & Celebrations</h3>
+                    <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Perfect for Weddings, Corporate Events & Celebrations
+                    </h3>
                     <p class="cs_iconbox_subtitle mb-0">Discover serenity at our spa. Indulge in blissful treatments and
                         unwind in a haven of relaxation. Your path to rejuvenation starts here</p>
                 </div>
@@ -130,8 +131,8 @@
                     <div class="cs_section_heading">
                         <p
                             class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">
-                            RESTAURANT & BAR</p>
-                        <h2 class="cs_fs_67 cs_mb_28">Casabelia Elegance, Savory Indulgence at Our Cuisine & Bar</h2>
+                            Weddings & Engagements</p>
+                        <h2 class="cs_fs_67 cs_mb_28">Royal banquet hall & open garden setup</h2>
                         <p class="cs_mb_46 cs_mb_lg_35">Step into the refined world of Casabelia, where our restaurant
                             and bar redefine the art of dining and socializing. Nestled within our luxurious resort,
                             Casabelia offers a sophisticated culinary experience that transcends expectations.</p>
@@ -167,10 +168,9 @@
                 <div class="cs_section_heading cs_style_1">
                     <div class="cs_section_heading">
                         <p
-                            class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">
-                            Conference Hall</p>
-                        <h2 class="cs_fs_67 cs_mb_28">Seapearl Meeting Oasis: Where Ideas Flourish</h2>
-                        <p class="cs_mb_46 cs_mb_lg_35">Discover a space designed for success at Seapearl's Conference
+                            class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase"> Corporate Events & Conferences</p>
+                        <h2 class="cs_fs_67 cs_mb_28">High-tech meeting halls & AV setup</h2>
+                        <p class="cs_mb_46 cs_mb_lg_35">Discover a space designed for success at Moonlight's Conference
                             Room. Tailored for productivity and sophistication, our venue offers modern amenities,
                             professional service, and an atmosphere that fosters innovation.</p>
                         <a href="restaurant.html"
