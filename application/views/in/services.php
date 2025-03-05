@@ -84,7 +84,7 @@
 <!-- Start Video Section -->
 <a href="https://www.youtube.com/embed/UJEUwEJ6gH4"
     class="cs_video_block cs_style_1 cs_color_1 cs_video_open text-center cs_center position-relative">
-    <h2 class="cs_video_block_title cs_fs_150 mb-0 position-relative cs_zindex_3">CASABALINA</h2>
+    <h2 class="cs_video_block_title cs_fs_150 mb-0 position-relative cs_zindex_3">MOONLIGHT</h2>
     <div class="cs_video_block_bg h-100 w-100 position-absolute start-0 top-0 cs_bg_filed cs_primary_bg"
         data-src="<?= base_url() ?>assets/web/assets/img/video_bg_8.jpg"></div>
     <span class="cs_play_btn">
@@ -136,7 +136,7 @@
                         <p class="cs_mb_46 cs_mb_lg_35">Step into the refined world of Casabelia, where our restaurant
                             and bar redefine the art of dining and socializing. Nestled within our luxurious resort,
                             Casabelia offers a sophisticated culinary experience that transcends expectations.</p>
-                        <a href="restaurant.html"
+                        <a href="#"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_20 cs_fs_15">
                             <b>Learn More </b>
                             <span>
@@ -173,7 +173,7 @@
                         <p class="cs_mb_46 cs_mb_lg_35">Discover a space designed for success at Moonlight's Conference
                             Room. Tailored for productivity and sophistication, our venue offers modern amenities,
                             professional service, and an atmosphere that fosters innovation.</p>
-                        <a href="restaurant.html"
+                        <a href="#"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_20 cs_fs_15">
                             <b>Learn More </b>
                             <span>
