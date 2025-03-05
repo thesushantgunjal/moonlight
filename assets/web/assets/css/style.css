@@ -7702,8 +7702,8 @@ a.ui-button:active,
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
 }
 /* new css for overlay div end*/
 .cs_hero.cs_style_3 .slick-active .cs_hero_bg {
