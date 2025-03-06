@@ -15,19 +15,24 @@
                     aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="POST" action="<?=base_url('admin/save_category')?>">
-                   <div class="row">
-                    <div class="col-md-6">
-                    <label for="category_name" class="form-label">Enter New Category</label>
-                    <input class="form-control" type="text" id="category_name" name="category_name"
-                        placeholder="Enter New Category" autofocus required />
+                <form method="POST" action="<?= base_url('admin/save_category') ?>">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="category_name" class="form-label">Enter New Category</label>
+                            <input class="form-control" type="text" id="category_name" name="category_name"
+                                placeholder="Enter New Category" autofocus required />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="rate1" class="form-label">Enter Rate1</label>
+                            <input class="form-control" type="text" id="rate1" name="rate1"
+                                placeholder="Enter Rate1" autofocus required />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="rate2" class="form-label">Enter Rate2</label>
+                            <input class="form-control" type="text" id="rate2" name="rate2"
+                                placeholder="Enter Rate2" autofocus required />
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                    <label for="rate" class="form-label">Enter Rate</label>
-                    <input class="form-control" type="text" id="rate" name="rate"
-                        placeholder="Enter Rate" autofocus required />
-                    </div>
-                   </div>
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary">Save Category</button>
@@ -53,22 +58,21 @@
                     </thead>
                     <tbody>
                         <?php
-                        foreach($category as $key=>$list)
-                        {
-                            ?>
+                        foreach ($category as $key => $list) {
+                        ?>
                             <tr>
-                                <td><?=$key+1?></td>
-                                <td><?=$list['category_name']?></td>
-                                <td>&#8377;.<?=$list['rate1']?></td>
-                                <td>&#8377;.<?=$list['rate2']?></td>
+                                <td><?= $key + 1 ?></td>
+                                <td><?= $list['category_name'] ?></td>
+                                <td>&#8377;.<?= $list['rate1'] ?></td>
+                                <td>&#8377;.<?= $list['rate2'] ?></td>
                                 <td>
-                                <a class="btn btn-sm btn-primary" href="<?=base_url('admin/edit_category')?>/<?=$list['category_id']?>"><i
-                                class='bx bx-edit'></i></a>
-                                <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?=base_url('admin/delete')?>/<?=$list['category_id']?>"><i
-                                class='bx bx-trash'></i></a>
+                                    <a class="btn btn-sm btn-primary" href="<?= base_url('admin/edit_category') ?>/<?= $list['category_id'] ?>"><i
+                                            class='bx bx-edit'></i></a>
+                                    <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?= base_url('admin/delete') ?>/<?= $list['category_id'] ?>"><i
+                                            class='bx bx-trash'></i></a>
                                 </td>
                             </tr>
-                            <?php
+                        <?php
                         }
                         ?>
                     </tbody>
