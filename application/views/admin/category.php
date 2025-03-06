@@ -46,7 +46,8 @@
                         <tr>
                             <th scope="col" class="fw-bold">Sr No</th>
                             <th scope="col" class="fw-bold">Category Name</th>
-                            <th scope="col" class="fw-bold">Rate</th>
+                            <th scope="col" class="fw-bold">Rate1</th>
+                            <th scope="col" class="fw-bold">Rate2</th>
                             <th scope="col" class="fw-bold">Action</th>
                         </tr>
                     </thead>
@@ -58,7 +59,8 @@
                             <tr>
                                 <td><?=$key+1?></td>
                                 <td><?=$list['category_name']?></td>
-                                <td>&#8377;.<?=$list['rate']?></td>
+                                <td>&#8377;.<?=$list['rate1']?></td>
+                                <td>&#8377;.<?=$list['rate2']?></td>
                                 <td>
                                 <a class="btn btn-sm btn-primary" href="<?=base_url('admin/edit_category')?>/<?=$list['category_id']?>"><i
                                 class='bx bx-edit'></i></a>
