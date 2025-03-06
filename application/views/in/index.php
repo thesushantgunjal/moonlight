@@ -144,7 +144,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
     <div class="cs_hero_7_form">
         <div class="container py-4">
         <form action="<?=base_url()?>" method="post">
@@ -153,7 +152,6 @@
             <div class="col-md-12">
                 <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
             </div>
-<<<<<<< Updated upstream
         </div>
         <div class="cs_form_item cs_date_item col position-relative">
             <div class="col-md-12">
@@ -176,117 +174,10 @@
                     Check Availability
                 </button>
             </div>
-=======
-        </div>
-        <div class="cs_form_item cs_date_item col position-relative">
-            <div class="col-md-12">
-                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
-            </div>
-        </div>
-        <div class="cs_form_item cs_date_item col position-relative">
-            <div class="col-md-12">
-                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
-            </div>
-        </div>
-        <div class="cs_form_item cs_date_item col position-relative">
-            <div class="col-md-12">
-                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="cs_form_item_btn">
-                <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">
-                    Check Availability
-                </button>
-            </div>
-=======
-    <!-- <div class="cs_hero_7_form">
-        <div class="container">
-            <form action="#" class="cs_form cs_style_4 cs_type_4 position-relative cs_zindex_10" method="post">
-                <div class="cs_date_items">
-                    <div class="cs_form_item cs_date_item">
-                        <label class="cs_white_color">Check in :</label>
-                        <input type="datetime-local" name="checkin" class=" cs_white_color">
-                    </div>
-                    <div class="cs_form_item cs_date_item">
-                        <label class="cs_white_color">Check out :</label>
-                        <input type="datetime-local" name="checkout" class="cs_datetimes cs_white_color">
-                    </div>
-                </div>
-                <div class="cs_form_item">
-                    <label class="cs_white_color">Rooms :</label>
-                    <div class="cs_quantity_wrap">
-                        <span class="cs_quantity_btn" data-initial-number="1"></span>
-                        <div class="cs_quantity_dropdown cs_primary_color">
-                            <div class="cs_quantity_dropdown_item">
-                                <span class="cs_quantity_title">Rooms :</span>
-                                <div class="cs_count">
-                                    <button class="cs_quantity_decrement cs_center" type="button">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </button>
-                                    <span class="cs_quantity_number" data-min-value="1" data-max-value="50">1</span>
-                                    <button class="cs_quantity_increment cs_center" type="button">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cs_form_item">
-                    <label class="cs_white_color">Adults :</label>
-                    <div class="cs_quantity_wrap">
-                        <span class="cs_quantity_btn" data-initial-number="1"></span>
-                        <div class="cs_quantity_dropdown cs_primary_color">
-                            <div class="cs_quantity_dropdown_item">
-                                <span class="cs_quantity_title">Adults :</span>
-                                <div class="cs_count">
-                                    <button class="cs_quantity_decrement cs_center" type="button">
-                                        <i class="fa-solid fa-minus"></i>
-                                    </button>
-                                    <span class="cs_quantity_number" data-min-value="1" data-max-value="30">1</span>
-                                    <button class="cs_quantity_increment cs_center" type="button">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cs_form_item_btn">
-                    <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">Check
-                        Availability</button>
-                </div>
-            </form>
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-        </div>
-    </div> -->
-    <div class="bg-dark">
-        <form action="#">
-            <label for="check-in">Check In</label>
-            <input type="datetime-local" id="check-in" name="check-in">
-            <label for="check-out"> Check Out</label>
-            <input type="datetime-local" id="check-out" name="check-out">
-            <label for="room">Room</label>
-            <select name="room" id="room">
-                <option value="Standard">Standard</option>
-                <option value="Deluxe">Deluxe</option>
-                <option value="Premium">Premium</option>
-                <option value="Luxury">Luxury</option>
-            </select>
-            <label for="adults">Adults</label>
-            <input type="number" id="adults" name="adults" min="1" max="10">
-            <button type="submit">Check Availability</button>
-        </form>
-    </div>
-<<<<<<< HEAD
+
 </form>
 
         </div>
-=======
-
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
->>>>>>> Stashed changes
 </section>
 <!-- End Hero Section -->
 
