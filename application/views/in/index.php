@@ -151,20 +151,20 @@
                 <div class="col-12 col-md-3">
                     <div class="cs_form_item cs_date_item position-relative">
                         <input type="datetime-local" name=""
-                            class="form-control w-100 bg-transparent border-0 text-white position-relative"
+                            class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
                             placeholder="Check In Date">
                     </div>
                 </div>
                 <div class="col-12 col-md-3">
                     <div class="cs_form_item cs_date_item position-relative">
                         <input type="datetime-local" name=""
-                            class="form-control w-100 bg-transparent border-0 text-white position-relative"
+                            class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
                             placeholder="Check In Date">
                     </div>
                 </div>
                 <div class="col-12 col-md-2">
                     <div class="cs_form_item cs_date_item position-relative">
-                        <select class="form-select w-100 bg-transparent border-0 text-white position-relative">
+                        <select class="form-select w-100 bg-transparent border-0 shadow-none text-white position-relative">
                             <option class="bg-black" selected>Rooms</option>
                             <option class="bg-black">Standard</option>
                             <option class="bg-black">Deluxe</option>
@@ -175,7 +175,7 @@
                 <div class="col-12 col-md-2">
                     <div class="cs_form_item cs_date_item position-relative">
                         <input type="number" name="" min="0" max="10"
-                            class="form-control w-100 bg-transparent border-0 text-white position-relative"
+                            class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
                             placeholder="Adults">
                     </div>
                 </div>
