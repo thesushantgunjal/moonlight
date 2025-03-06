@@ -12,7 +12,8 @@
                             <div class="cs_hero_text">
                                 <p
                                     class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium">
-                                    <span>WELCOME TO MOONLIGHT RESORTS</span></p>
+                                    <span>WELCOME TO MOONLIGHT RESORTS</span>
+                                </p>
                                 <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">A Heaven Of Luxury <br> &
                                     Purity</h1>
                                 <div class="cs_hero_btn">
@@ -51,7 +52,8 @@
                             <div class="cs_hero_text">
                                 <p
                                     class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium">
-                                    <span>WELCOME TO MOONLIGHT RESORTS</span></p>
+                                    <span>WELCOME TO MOONLIGHT RESORTS</span>
+                                </p>
                                 <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">A Heaven Of Luxury <br> &
                                     Purity</h1>
                                 <div class="cs_hero_btn">
@@ -90,7 +92,8 @@
                             <div class="cs_hero_text">
                                 <p
                                     class="cs_hero_subtitle cs_white_color text-uppercase d-inline-flex position-relative cs_mb_25 cs_letter_spacing_1 cs_medium">
-                                    <span>WELCOME TO MOONLIGHT RESORTS</span></p>
+                                    <span>WELCOME TO MOONLIGHT RESORTS</span>
+                                </p>
                                 <h1 class="cs_hero_title cs_fs_89 cs_white_color cs_mb_44">A Heaven Of Luxury <br> &
                                     Purity</h1>
                                 <div class="cs_hero_btn">
@@ -141,19 +144,17 @@
             </div>
         </div>
     </div>
-    <div class="cs_hero_7_form">
+    <!-- <div class="cs_hero_7_form">
         <div class="container">
-            <form action="#"
-                class="cs_form cs_style_4 cs_type_4 position-relative cs_zindex_10" method="post">
+            <form action="#" class="cs_form cs_style_4 cs_type_4 position-relative cs_zindex_10" method="post">
                 <div class="cs_date_items">
-                    <input type="text" name="datetimes" class="cs_datetimes">
                     <div class="cs_form_item cs_date_item">
                         <label class="cs_white_color">Check in :</label>
-                        <span class="cs_start_date cs_start_date_value cs_white_color">Start Date:</span>
+                        <input type="datetime-local" name="checkin" class=" cs_white_color">
                     </div>
                     <div class="cs_form_item cs_date_item">
                         <label class="cs_white_color">Check out :</label>
-                        <span class="cs_end_date cs_end_date_value cs_white_color">End Date:</span>
+                        <input type="datetime-local" name="checkout" class="cs_datetimes cs_white_color">
                     </div>
                 </div>
                 <div class="cs_form_item">
@@ -167,7 +168,7 @@
                                     <button class="cs_quantity_decrement cs_center" type="button">
                                         <i class="fa-solid fa-minus"></i>
                                     </button>
-                                    <span class="cs_quantity_number" data-min-value="1" data-max-value="50"></span>
+                                    <span class="cs_quantity_number" data-min-value="1" data-max-value="50">1</span>
                                     <button class="cs_quantity_increment cs_center" type="button">
                                         <i class="fa-solid fa-plus"></i>
                                     </button>
@@ -187,7 +188,7 @@
                                     <button class="cs_quantity_decrement cs_center" type="button">
                                         <i class="fa-solid fa-minus"></i>
                                     </button>
-                                    <span class="cs_quantity_number" data-min-value="1" data-max-value="30"></span>
+                                    <span class="cs_quantity_number" data-min-value="1" data-max-value="30">1</span>
                                     <button class="cs_quantity_increment cs_center" type="button">
                                         <i class="fa-solid fa-plus"></i>
                                     </button>
@@ -202,7 +203,26 @@
                 </div>
             </form>
         </div>
+    </div> -->
+    <div class="bg-dark">
+        <form action="#">
+            <label for="check-in">Check In</label>
+            <input type="datetime-local" id="check-in" name="check-in">
+            <label for="check-out"> Check Out</label>
+            <input type="datetime-local" id="check-out" name="check-out">
+            <label for="room">Room</label>
+            <select name="room" id="room">
+                <option value="Standard">Standard</option>
+                <option value="Deluxe">Deluxe</option>
+                <option value="Premium">Premium</option>
+                <option value="Luxury">Luxury</option>
+            </select>
+            <label for="adults">Adults</label>
+            <input type="number" id="adults" name="adults" min="1" max="10">
+            <button type="submit">Check Availability</button>
+        </form>
     </div>
+
 </section>
 <!-- End Hero Section -->
 
@@ -214,25 +234,26 @@
             <div class="row align-items-center cs_gap_y_40">
                 <div class="col-lg-7">
                     <div class="cs_pr_110">
-                        <a href="#" class="cs_video_block cs_style_1 cs_type_3 cs_video_open text-center cs_center position-relative cs_radius_5">
+                        <a href="#"
+                            class="cs_video_block cs_style_1 cs_type_3 cs_video_open text-center cs_center position-relative cs_radius_5">
 
-                        <div class="cs_video_block_bg h-100 w-100 position-absolute start-0 top-0 cs_bg_filed cs_primary_bg"
-                            data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
-                        <span class="cs_play_btn_2 cs_center rounded-circle">
-                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_249_123_587)">
-                                    <path
-                                        d="M29.8842 11.6214L15.9746 1.42181C14.8882 0.626264 13.6027 0.147096 12.2606 0.0374155C10.9185 -0.0722649 9.57229 0.191827 8.37111 0.800417C7.16994 1.40901 6.16075 2.33832 5.4554 3.48536C4.75006 4.63239 4.37611 5.95234 4.37501 7.29889V27.7083C4.37291 29.0561 4.74491 30.3781 5.44958 31.5271C6.15426 32.6761 7.16396 33.607 8.36631 34.2162C9.56866 34.8254 10.9165 35.089 12.2597 34.9776C13.603 34.8662 14.889 34.3843 15.9746 33.5854L29.8842 23.3858C30.8071 22.7084 31.5576 21.8233 32.0749 20.802C32.5922 19.7808 32.8618 18.652 32.8618 17.5072C32.8618 16.3624 32.5922 15.2337 32.0749 14.2124C31.5576 13.1911 30.8071 12.306 29.8842 11.6287V11.6214Z"
-                                        fill="white"></path>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_249_123_587">
-                                        <rect width="35" height="35" fill="white"></rect>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
+                            <div class="cs_video_block_bg h-100 w-100 position-absolute start-0 top-0 cs_bg_filed cs_primary_bg"
+                                data-src="<?= base_url() ?>assets/web/assets/img/slider2.jpg"></div>
+                            <span class="cs_play_btn_2 cs_center rounded-circle">
+                                <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_249_123_587)">
+                                        <path
+                                            d="M29.8842 11.6214L15.9746 1.42181C14.8882 0.626264 13.6027 0.147096 12.2606 0.0374155C10.9185 -0.0722649 9.57229 0.191827 8.37111 0.800417C7.16994 1.40901 6.16075 2.33832 5.4554 3.48536C4.75006 4.63239 4.37611 5.95234 4.37501 7.29889V27.7083C4.37291 29.0561 4.74491 30.3781 5.44958 31.5271C6.15426 32.6761 7.16396 33.607 8.36631 34.2162C9.56866 34.8254 10.9165 35.089 12.2597 34.9776C13.603 34.8662 14.889 34.3843 15.9746 33.5854L29.8842 23.3858C30.8071 22.7084 31.5576 21.8233 32.0749 20.802C32.5922 19.7808 32.8618 18.652 32.8618 17.5072C32.8618 16.3624 32.5922 15.2337 32.0749 14.2124C31.5576 13.1911 30.8071 12.306 29.8842 11.6287V11.6214Z"
+                                            fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_249_123_587">
+                                            <rect width="35" height="35" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -287,75 +308,79 @@
             <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase">Rooms &
                 Suites</p>
             <h2 class="cs_fs_67 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Our Exquisite Rooms &
-                <br>Suites Collection</h2>
+                <br>Suites Collection
+            </h2>
         </div>
         <div class="cs_height_80 cs_height_lg_50"></div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-md-4 p-2">
-            <div class="cs_grid_item">
-                <a href="<?=base_url()?>in/room_detail" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
-                    <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_20.jpg"
-                        alt="Room">
-                    <span
-                        class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.2200</span>
-                    <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
-                        <div>
-                            <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Standard Room</h2>
-                            <ul class="cs_card_list cs_mp_0 cs_ternary_color">
-                                <li>24/7 Service</li>
-                                <li>Free Wi-Fi</li>
-                                <li>Jain-Friendly</li>
-                            </ul>
+                <div class="cs_grid_item">
+                    <a href="<?= base_url() ?>in/room_detail"
+                        class="cs_card cs_style_4 cs_type_1 d-block position-relative">
+                        <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_20.jpg"
+                            alt="Room">
+                        <span
+                            class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.2200</span>
+                        <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
+                            <div>
+                                <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Standard Room</h2>
+                                <ul class="cs_card_list cs_mp_0 cs_ternary_color">
+                                    <li>24/7 Service</li>
+                                    <li>Free Wi-Fi</li>
+                                    <li>Jain-Friendly</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
             </div>
             <div class="col-md-4 p-2">
                 <div class="cs_grid_item">
-                <a href="<?=base_url()?>in/room_detail" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
-                    <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_19.jpg"
-                        alt="Room">
-                    <span
-                        class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.2500</span>
-                    <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
-                        <div>
-                            <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Deluxe Room</h2>
-                            <ul class="cs_card_list cs_mp_0 cs_ternary_color">
-                                <li>24/7 Service</li>
-                                <li>Free Wi-Fi</li>
-                                <li>Jain-Friendly</li>
-                            </ul>
+                    <a href="<?= base_url() ?>in/room_detail"
+                        class="cs_card cs_style_4 cs_type_1 d-block position-relative">
+                        <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_19.jpg"
+                            alt="Room">
+                        <span
+                            class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.2500</span>
+                        <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
+                            <div>
+                                <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Deluxe Room</h2>
+                                <ul class="cs_card_list cs_mp_0 cs_ternary_color">
+                                    <li>24/7 Service</li>
+                                    <li>Free Wi-Fi</li>
+                                    <li>Jain-Friendly</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
             </div>
             <div class="col-md-4 p-2">
-            <div class="cs_grid_item">
-                <a href="<?=base_url()?>in/room_detail" class="cs_card cs_style_4 cs_type_1 d-block position-relative">
-                    <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_21.jpg"
-                        alt="Room">
-                    <span
-                        class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.3000</span>
-                    <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
-                        <div>
-                            <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Premium Room</h2>
-                            <ul class="cs_card_list cs_mp_0 cs_ternary_color">
-                                <li>24/7 Service</li>
-                                <li>Free Wi-Fi</li>
-                                <li>Jain-Friendly</li>
-                            </ul>
+                <div class="cs_grid_item">
+                    <a href="<?= base_url() ?>in/room_detail"
+                        class="cs_card cs_style_4 cs_type_1 d-block position-relative">
+                        <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_21.jpg"
+                            alt="Room">
+                        <span
+                            class="cs_card_price cs_accent_color cs_medium cs_fs_15 cs_white_bg position-absolute">&#8377;.3000</span>
+                        <div class="cs_card_info position-absolute start-0 top-0 h-100 w-100">
+                            <div>
+                                <h2 class="cs_card_title cs_fs_50 mb-0 cs_white_color">Premium Room</h2>
+                                <ul class="cs_card_list cs_mp_0 cs_ternary_color">
+                                    <li>24/7 Service</li>
+                                    <li>Free Wi-Fi</li>
+                                    <li>Jain-Friendly</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
-            </div>
-                
-            </div>
+
         </div>
+    </div>
     </div>
     <div class="cs_height_150 cs_height_lg_80"></div>
 </section>
@@ -370,7 +395,7 @@
                 <div class="cs_section_heading cs_style_1">
                     <p class="cs_section_subtitle cs_medium cs_letter_spacing_1 cs_mb_28 cs_mb_lg_15 text-uppercase wow fadeInLeft"
                         data-wow-duration="0.8s" data-wow-delay="0.2s">Why CHOOSE MOONLIGHT</p>
-                        <h2 class="cs_fs_67 mb-0">Experience Unmatched Luxury, Comfort & Purity at Moonlight Resort</h2>
+                    <h2 class="cs_fs_67 mb-0">Experience Unmatched Luxury, Comfort & Purity at Moonlight Resort</h2>
                 </div>
                 <div class="cs_slider_arrows cs_style_4">
                     <div class="cs_left_arrow slick-arrow cs_center">
@@ -401,15 +426,18 @@
                                         src="<?= base_url() ?>assets/web/assets/img/icons/restaurant.svg" alt="Icon">
                                 </div>
                                 <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Pure Vegetarian & Jain Cuisine</h3>
-                                <p class="cs_iconbox_subtitle mb-0">Enjoy authentic, high-quality vegetarian and Jain delicacies.</p>
+                                <p class="cs_iconbox_subtitle mb-0">Enjoy authentic, high-quality vegetarian and Jain
+                                    delicacies.</p>
                             </div>
                         </div>
                         <div class="cs_slide">
                             <div class="cs_iconbox cs_style_3 cs_radius_5 cs_white_bg">
                                 <div class="cs_iconbox_icon cs_mb_29 cs_center cs_radius_5 cs_white_bg"><img
                                         src="<?= base_url() ?>assets/web/assets/img/icons/bed-alt.svg" alt="Icon"></div>
-                                <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38"> Luxurious Rooms with Modern Amenities</h3>
-                                <p class="cs_iconbox_subtitle mb-0">Experience ultimate comfort with well-equipped, stylish accommodations.</p>
+                                <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38"> Luxurious Rooms with Modern Amenities
+                                </h3>
+                                <p class="cs_iconbox_subtitle mb-0">Experience ultimate comfort with well-equipped,
+                                    stylish accommodations.</p>
                             </div>
                         </div>
                         <div class="cs_slide">
@@ -418,7 +446,8 @@
                                         src="<?= base_url() ?>assets/web/assets/img/icons/massage.svg" alt="Icon">
                                 </div>
                                 <h3 class="cs_iconbox_title cs_mb_19 cs_fs_38">Elegant Banquet Halls</h3>
-                                <p class="cs_iconbox_subtitle mb-0">Perfect venues for weddings, corporate events, and special celebrations.</p>
+                                <p class="cs_iconbox_subtitle mb-0">Perfect venues for weddings, corporate events, and
+                                    special celebrations.</p>
                             </div>
                         </div>
                         <div class="cs_slide">
@@ -997,16 +1026,17 @@
         <div class="row cs_row_gap_60 cs_gap_y_40">
             <div class="col-lg-4">
                 <div class="cs_card cs_style_6 text-center cs_radius_5 overflow-hidden">
-                    <a href="<?=base_url()?>" class="cs_card_thumb overflow-hidden d-block position-relative">
+                    <a href="<?= base_url() ?>" class="cs_card_thumb overflow-hidden d-block position-relative">
                         <img src="<?= base_url() ?>assets/web/assets/img/feature_img_18.jpg" alt="Feature"
                             class="w-100">
                     </a>
                     <div class="cs_card_info">
                         <h2 class="cs_card_title cs_fs_38 cs_mb_19">
-                            <a href="<?=base_url()?>">Discounts for Weddings & Events</a>
+                            <a href="<?= base_url() ?>">Discounts for Weddings & Events</a>
                         </h2>
-                        <p class="cs_card_subtitle cs_mb_36"> Book your weddings & events in advance and enjoy special savings.</p>
-                        <a href="<?=base_url()?>"
+                        <p class="cs_card_subtitle cs_mb_36"> Book your weddings & events in advance and enjoy special
+                            savings.</p>
+                        <a href="<?= base_url() ?>"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
@@ -1033,16 +1063,17 @@
             </div>
             <div class="col-lg-4">
                 <div class="cs_card cs_style_6 text-center cs_radius_5 overflow-hidden">
-                    <a href="<?=base_url()?>" class="cs_card_thumb overflow-hidden d-block position-relative">
+                    <a href="<?= base_url() ?>" class="cs_card_thumb overflow-hidden d-block position-relative">
                         <img src="<?= base_url() ?>assets/web/assets/img/feature_img_19.jpg" alt="Feature"
                             class="w-100">
                     </a>
                     <div class="cs_card_info">
                         <h2 class="cs_card_title cs_fs_38 cs_mb_19">
-                            <a href="<?=base_url()?>"> Long-Stay & Corporate Packages</a>
+                            <a href="<?= base_url() ?>"> Long-Stay & Corporate Packages</a>
                         </h2>
-                        <p class="cs_card_subtitle cs_mb_36"> Ideal for business travelers and extended stays with exclusive benefits.</p>
-                        <a href="<?=base_url()?>"
+                        <p class="cs_card_subtitle cs_mb_36"> Ideal for business travelers and extended stays with
+                            exclusive benefits.</p>
+                        <a href="<?= base_url() ?>"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
@@ -1069,16 +1100,17 @@
             </div>
             <div class="col-lg-4">
                 <div class="cs_card cs_style_6 text-center cs_radius_5 overflow-hidden">
-                    <a href="<?=base_url()?>" class="cs_card_thumb overflow-hidden d-block position-relative">
+                    <a href="<?= base_url() ?>" class="cs_card_thumb overflow-hidden d-block position-relative">
                         <img src="<?= base_url() ?>assets/web/assets/img/feature_img_18.jpg" alt="Feature"
                             class="w-100">
                     </a>
                     <div class="cs_card_info">
                         <h2 class="cs_card_title cs_fs_38 cs_mb_19">
-                            <a href="<?=base_url()?>">Seasonal & Festival Deals</a>
+                            <a href="<?= base_url() ?>">Seasonal & Festival Deals</a>
                         </h2>
-                        <p class="cs_card_subtitle cs_mb_36">Celebrate special occasions with exciting discounts and offers.</p>
-                        <a href="<?=base_url()?>"
+                        <p class="cs_card_subtitle cs_mb_36">Celebrate special occasions with exciting discounts and
+                            offers.</p>
+                        <a href="<?= base_url() ?>"
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>

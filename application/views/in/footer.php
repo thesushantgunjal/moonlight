@@ -160,7 +160,7 @@
 <script src="<?= base_url() ?>assets/web/assets/js/jquery.slick.min.js"></script>
 <script src="<?= base_url() ?>assets/web/assets/js/swiper.min.js"></script>
 <script src="<?= base_url() ?>assets/web/assets/js/moment.min.js"></script>
-<script src="<?= base_url() ?>assets/web/assets/js/daterangepicker.min.js"></script>
+<!-- <script src="<?= base_url() ?>assets/web/assets/js/daterangepicker.min.js"></script> -->
 <script src="<?= base_url() ?>assets/web/assets/js/lightgallery.min.js"></script>
 <script src="<?= base_url() ?>assets/web/assets/js/YTPlayer.min.js"></script>
 <script src="<?= base_url() ?>assets/web/assets/js/main.js"></script>
