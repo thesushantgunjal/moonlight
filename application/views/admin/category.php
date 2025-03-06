@@ -1,36 +1,36 @@
 <div class="row">
     <div class="col-md-12 mb-3">
-        <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                class='bx bx-plus-circle me-2'></i>Add Category</button>
+        <button class="btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class='bx bx-plus-circle me-2'></i>Add Category
+        </button>
     </div>
 </div>
-<!-- Add Category Modal -->
 
+<!-- Add Category Modal -->
 <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Category</h1>
-                <button type="button" class="btn-close rounded-circle bg-dark" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
+                <button type="button" class="btn-close rounded-circle bg-dark" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form method="POST" action="<?= base_url('admin/save_category') ?>">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="category_name" class="form-label">Enter New Category</label>
+                            <label for="category_name" class="form-label">Enter Category Name</label>
                             <input class="form-control" type="text" id="category_name" name="category_name"
-                                placeholder="Enter New Category" autofocus required />
+                                placeholder="Enter Category Name" autofocus required />
                         </div>
                         <div class="col-md-3">
-                            <label for="rate1" class="form-label">Enter Rate1</label>
+                            <label for="rate1" class="form-label">Mon to Fri Rate</label>
                             <input class="form-control" type="text" id="rate1" name="rate1"
-                                placeholder="Enter Rate1" autofocus required />
+                                placeholder="Enter Mon to Fri Rate" autofocus required />
                         </div>
                         <div class="col-md-3">
-                            <label for="rate2" class="form-label">Enter Rate2</label>
+                            <label for="rate2" class="form-label">Sat to Sun Rate</label>
                             <input class="form-control" type="text" id="rate2" name="rate2"
-                                placeholder="Enter Rate2" autofocus required />
+                                placeholder="Enter Sat to Sun Rate" autofocus required />
                         </div>
                     </div>
             </div>
@@ -41,6 +41,7 @@
         </div>
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-12 mt-3">
         <div class="card mb-6 table-responsive">
@@ -51,8 +52,8 @@
                         <tr>
                             <th scope="col" class="fw-bold">Sr No</th>
                             <th scope="col" class="fw-bold">Category Name</th>
-                            <th scope="col" class="fw-bold">Rate1</th>
-                            <th scope="col" class="fw-bold">Rate2</th>
+                            <th scope="col" class="fw-bold">Mon to Fri Rate</th>
+                            <th scope="col" class="fw-bold">Sat to Sun Rate</th>
                             <th scope="col" class="fw-bold">Action</th>
                         </tr>
                     </thead>
@@ -66,10 +67,12 @@
                                 <td>&#8377;.<?= $list['rate1'] ?></td>
                                 <td>&#8377;.<?= $list['rate2'] ?></td>
                                 <td>
-                                    <a class="btn btn-sm btn-primary" href="<?= base_url('admin/edit_category') ?>/<?= $list['category_id'] ?>"><i
-                                            class='bx bx-edit'></i></a>
-                                    <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?= base_url('admin/delete') ?>/<?= $list['category_id'] ?>"><i
-                                            class='bx bx-trash'></i></a>
+                                    <a class="btn btn-sm btn-primary" href="<?= base_url('admin/edit_category') ?>/<?= $list['category_id'] ?>">
+                                        <i class='bx bx-edit'></i>
+                                    </a>
+                                    <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?= base_url('admin/delete') ?>/<?= $list['category_id'] ?>">
+                                        <i class='bx bx-trash'></i>
+                                    </a>
                                 </td>
                             </tr>
                         <?php
