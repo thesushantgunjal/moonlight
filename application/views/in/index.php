@@ -146,7 +146,7 @@
     </div>
     <div class="cs_hero_7_form">
         <div class="container py-4">
-        <form action="<?=base_url()?>" method="post">
+        <form action="#" method="post">
     <div class="row d-flex align-items-center flex-nowrap">
         <div class="cs_form_item cs_date_item col position-relative">
             <div class="col-md-12">
@@ -272,21 +272,7 @@
         <div class="row">
             <div class="col-md-4 p-2">
                 <div class="cs_grid_item">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
                     <a href="<?= base_url() ?>in/room_detail"
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-                    <a href="<?=base_url()?>in/room_detail"
-=======
-                    <a href="<?= base_url() ?>in/room_detail"
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
                         class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                         <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_20.jpg"
                             alt="Room">
@@ -307,21 +293,7 @@
             </div>
             <div class="col-md-4 p-2">
                 <div class="cs_grid_item">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
                     <a href="<?= base_url() ?>in/room_detail"
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-                    <a href="<?=base_url()?>in/room_detail"
-=======
-                    <a href="<?= base_url() ?>in/room_detail"
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
                         class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                         <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_19.jpg"
                             alt="Room">
@@ -342,21 +314,7 @@
             </div>
             <div class="col-md-4 p-2">
                 <div class="cs_grid_item">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
                     <a href="<?= base_url() ?>in/room_detail"
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-                    <a href="<?=base_url()?>in/room_detail"
-=======
-                    <a href="<?= base_url() ?>in/room_detail"
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
                         class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                         <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_21.jpg"
                             alt="Room">
