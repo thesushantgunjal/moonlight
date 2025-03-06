@@ -145,39 +145,52 @@
         </div>
     </div>
     <div class="cs_hero_7_form">
-        <div class="container py-4">
+    <div class="container py-4">
         <form action="#" method="post">
-    <div class="row d-flex align-items-center flex-nowrap">
-        <div class="cs_form_item cs_date_item col position-relative">
-            <div class="col-md-12">
-                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
+            <div class="row g-3">
+                <div class="col-12 col-md-3">
+                    <div class="cs_form_item cs_date_item position-relative">
+                        <input type="datetime-local" name=""
+                            class="form-control w-100 bg-transparent border-0 text-white position-relative"
+                            placeholder="Check In Date">
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="cs_form_item cs_date_item position-relative">
+                        <input type="datetime-local" name=""
+                            class="form-control w-100 bg-transparent border-0 text-white position-relative"
+                            placeholder="Check In Date">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="cs_form_item cs_date_item position-relative">
+                        <select class="form-select w-100 bg-transparent border-0 text-white position-relative">
+                            <option class="bg-black" selected>Rooms</option>
+                            <option class="bg-black">Standard</option>
+                            <option class="bg-black">Deluxe</option>
+                            <option class="bg-black">Premium</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="cs_form_item cs_date_item position-relative">
+                        <input type="number" name="" min="0" max="10"
+                            class="form-control w-100 bg-transparent border-0 text-white position-relative"
+                            placeholder="Adults">
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="cs_form_item_btn">
+                        <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+                            Check Availability
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="cs_form_item cs_date_item col position-relative">
-            <div class="col-md-12">
-                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
-            </div>
-        </div>
-        <div class="cs_form_item cs_date_item col position-relative">
-            <div class="col-md-12">
-                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
-            </div>
-        </div>
-        <div class="cs_form_item cs_date_item col position-relative">
-            <div class="col-md-12">
-                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="cs_form_item_btn">
-                <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">
-                    Check Availability
-                </button>
-            </div>
+        </form>
+    </div>
+</div>
 
-</form>
-
-        </div>
 </section>
 <!-- End Hero Section -->
 
@@ -991,42 +1004,34 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36"> Book your weddings & events in advance and enjoy special
                             savings.</p>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                        <a href="<?= base_url() ?>"
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-                        <a href="<?=base_url()?>"
-=======
-                        <a href="<?= base_url() ?>"
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-                            class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                            <b>Details View</b>
-                            <span>
-                                <i>
-                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </i>
-                                <i>
-                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </i>
-                            </span>
-                        </a>
+                        <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
+                            >>>>>> Stashed changes
+                            <<<<<<< HEAD <a href="<?=base_url()?>"=======<a href="<?= base_url() ?>">>>>>>>
+                                c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+                                <<<<<<< Updated upstream>>>>>>> Stashed changes
+                                    =======
+                                    >>>>>>> Stashed changes
+                                    class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
+                                    <b>Details View</b>
+                                    <span>
+                                        <i>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </i>
+                                        <i>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                    </a>
                     </div>
                 </div>
             </div>
@@ -1042,42 +1047,34 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36"> Ideal for business travelers and extended stays with
                             exclusive benefits.</p>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                        <a href="<?= base_url() ?>"
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-                        <a href="<?=base_url()?>"
-=======
-                        <a href="<?= base_url() ?>"
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-                            class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                            <b>Details View</b>
-                            <span>
-                                <i>
-                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </i>
-                                <i>
-                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </i>
-                            </span>
-                        </a>
+                        <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
+                            >>>>>> Stashed changes
+                            <<<<<<< HEAD <a href="<?=base_url()?>"=======<a href="<?= base_url() ?>">>>>>>>
+                                c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+                                <<<<<<< Updated upstream>>>>>>> Stashed changes
+                                    =======
+                                    >>>>>>> Stashed changes
+                                    class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
+                                    <b>Details View</b>
+                                    <span>
+                                        <i>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </i>
+                                        <i>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                    </a>
                     </div>
                 </div>
             </div>
@@ -1093,42 +1090,34 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36">Celebrate special occasions with exciting discounts and
                             offers.</p>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                        <a href="<?= base_url() ?>"
-=======
-=======
->>>>>>> Stashed changes
-<<<<<<< HEAD
-                        <a href="<?=base_url()?>"
-=======
-                        <a href="<?= base_url() ?>"
->>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-                            class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                            <b>Details View</b>
-                            <span>
-                                <i>
-                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </i>
-                                <i>
-                                    <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
-                                            fill="currentColor"></path>
-                                    </svg>
-                                </i>
-                            </span>
-                        </a>
+                        <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
+                            >>>>>> Stashed changes
+                            <<<<<<< HEAD <a href="<?=base_url()?>"=======<a href="<?= base_url() ?>">>>>>>>
+                                c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+                                <<<<<<< Updated upstream>>>>>>> Stashed changes
+                                    =======
+                                    >>>>>>> Stashed changes
+                                    class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
+                                    <b>Details View</b>
+                                    <span>
+                                        <i>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </i>
+                                        <i>
+                                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                    </a>
                     </div>
                 </div>
             </div>
