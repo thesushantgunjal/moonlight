@@ -144,6 +144,41 @@
             </div>
         </div>
     </div>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    <div class="cs_hero_7_form">
+        <div class="container py-4">
+        <form action="<?=base_url()?>" method="post">
+    <div class="row d-flex align-items-center flex-nowrap">
+        <div class="cs_form_item cs_date_item col position-relative">
+            <div class="col-md-12">
+                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
+            </div>
+        </div>
+        <div class="cs_form_item cs_date_item col position-relative">
+            <div class="col-md-12">
+                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
+            </div>
+        </div>
+        <div class="cs_form_item cs_date_item col position-relative">
+            <div class="col-md-12">
+                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
+            </div>
+        </div>
+        <div class="cs_form_item cs_date_item col position-relative">
+            <div class="col-md-12">
+                <input type="datetime-local" name="" class="form-control w-100 bg-transparent border-0 text-white position-relative" placeholder="Check In Date">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="cs_form_item_btn">
+                <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+                    Check Availability
+                </button>
+            </div>
+=======
+>>>>>>> Stashed changes
     <!-- <div class="cs_hero_7_form">
         <div class="container">
             <form action="#" class="cs_form cs_style_4 cs_type_4 position-relative cs_zindex_10" method="post">
@@ -202,6 +237,7 @@
                         Availability</button>
                 </div>
             </form>
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
         </div>
     </div> -->
     <div class="bg-dark">
@@ -222,7 +258,17 @@
             <button type="submit">Check Availability</button>
         </form>
     </div>
+<<<<<<< Updated upstream
 
+=======
+<<<<<<< HEAD
+</form>
+
+        </div>
+=======
+
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+>>>>>>> Stashed changes
 </section>
 <!-- End Hero Section -->
 
@@ -317,7 +363,15 @@
         <div class="row">
             <div class="col-md-4 p-2">
                 <div class="cs_grid_item">
+<<<<<<< Updated upstream
                     <a href="<?= base_url() ?>in/room_detail"
+=======
+<<<<<<< HEAD
+                    <a href="<?=base_url()?>in/room_detail"
+=======
+                    <a href="<?= base_url() ?>in/room_detail"
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+>>>>>>> Stashed changes
                         class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                         <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_20.jpg"
                             alt="Room">
@@ -338,7 +392,15 @@
             </div>
             <div class="col-md-4 p-2">
                 <div class="cs_grid_item">
+<<<<<<< Updated upstream
                     <a href="<?= base_url() ?>in/room_detail"
+=======
+<<<<<<< HEAD
+                    <a href="<?=base_url()?>in/room_detail"
+=======
+                    <a href="<?= base_url() ?>in/room_detail"
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+>>>>>>> Stashed changes
                         class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                         <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_19.jpg"
                             alt="Room">
@@ -359,7 +421,15 @@
             </div>
             <div class="col-md-4 p-2">
                 <div class="cs_grid_item">
+<<<<<<< Updated upstream
                     <a href="<?= base_url() ?>in/room_detail"
+=======
+<<<<<<< HEAD
+                    <a href="<?=base_url()?>in/room_detail"
+=======
+                    <a href="<?= base_url() ?>in/room_detail"
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+>>>>>>> Stashed changes
                         class="cs_card cs_style_4 cs_type_1 d-block position-relative">
                         <img class="cs_card_thumb w-100 h-100" src="<?= base_url() ?>assets/web/assets/img/room_21.jpg"
                             alt="Room">
@@ -1036,7 +1106,15 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36"> Book your weddings & events in advance and enjoy special
                             savings.</p>
+<<<<<<< Updated upstream
                         <a href="<?= base_url() ?>"
+=======
+<<<<<<< HEAD
+                        <a href="<?=base_url()?>"
+=======
+                        <a href="<?= base_url() ?>"
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+>>>>>>> Stashed changes
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
@@ -1073,7 +1151,15 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36"> Ideal for business travelers and extended stays with
                             exclusive benefits.</p>
+<<<<<<< Updated upstream
                         <a href="<?= base_url() ?>"
+=======
+<<<<<<< HEAD
+                        <a href="<?=base_url()?>"
+=======
+                        <a href="<?= base_url() ?>"
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+>>>>>>> Stashed changes
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
@@ -1110,7 +1196,15 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36">Celebrate special occasions with exciting discounts and
                             offers.</p>
+<<<<<<< Updated upstream
                         <a href="<?= base_url() ?>"
+=======
+<<<<<<< HEAD
+                        <a href="<?=base_url()?>"
+=======
+                        <a href="<?= base_url() ?>"
+>>>>>>> c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
+>>>>>>> Stashed changes
                             class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                             <b>Details View</b>
                             <span>
