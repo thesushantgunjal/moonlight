@@ -27,4 +27,12 @@ class My_model extends CI_Model
     {
         return $this->db->where($cond)->delete($tname);
     }
+
+    public function get_rooms_with_category()
+    {
+        $this->db->select("rooms.*, category.category_name");
+        $this->db->from("rooms");
+        $this->db->join("category", "category.category_id = rooms.category_id", "left");
+        return $this->db->get()->result_array();
+    }
 }

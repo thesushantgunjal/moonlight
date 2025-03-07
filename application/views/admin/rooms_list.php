@@ -25,7 +25,7 @@
                                     <a href="<?= base_url() ?>admin/edit_rooms/<?= $row['rooms_id'] ?>" class="btn btn-danger btn-sm"><i class="bx bxs-trash"></i></a>
                                 </td>
                                 <td><?= $key + 1 ?></td>
-                                <td><?= $row['category_id'] ?></td>
+                                <td><?= $row['category_name'] ?></td>
                                 <td><?= $row['rooms_no'] ?></td>
                                 <td><?= $row['rooms_facility'] ?></td>
                                 <td><img src="<?= base_url() ?>uploads/<?= $row['rooms_main_image'] ?>" width="100" alt=""></td>

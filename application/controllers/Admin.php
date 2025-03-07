@@ -136,7 +136,8 @@ class Admin extends CI_Controller
 
     public function rooms_list()
     {
-        $data["rooms"] = $this->My_model->select("rooms");
+       
+        $data["rooms"] = $this->My_model->get_rooms_with_category();
         $this->navbar();
         $this->load->view("admin/rooms_list", $data);
         $this->footer();
