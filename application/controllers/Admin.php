@@ -101,15 +101,25 @@ class Admin extends CI_Controller
 
     public function save_rooms()
     {
-        echo "<pre>";
-        print_r($_POST);
-        print_r($_FILES);
-        if ($_FILES['rooms_main_image']['name'] != '') {
-            $filename = time() . $_FILES['rooms_main_image']['name'];
-            move_uploaded_file($_FILES["rooms_main_image"]['tmp_name'], "uploads/" . $filename);
-            $_POST["rooms_main_image"] = $filename;
+        if (isset($_POST['rooms_facility']) && is_array($_POST['rooms_facility'])) {
+            $_POST['rooms_facility'] = implode(', ', $_POST['rooms_facility']);
         }
+
+        $image_fields = ['rooms_main_image', 'rooms_image1', 'rooms_image2', 'rooms_image3', 'rooms_image4'];
+
+        foreach ($image_fields as $field) {
+            if (!empty($_FILES[$field]['name'])) {
+                $filename = time() . $_FILES[$field]['name'];
+                move_uploaded_file($_FILES[$field]['tmp_name'], "uploads/" . $filename);
+                $_POST[$field] = $filename;
+            }
+        }
+
+        $this->My_model->insert("rooms", $_POST);
+
+        redirect(base_url() . "admin/rooms");
     }
+
 
     public function booked_rooms()
     {

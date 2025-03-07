@@ -10,8 +10,8 @@
                             <select class="form-select" id="category" name="category_id" required>
                                 <option selected disabled value="">Choose Category</option>
                                 <?php foreach($category as $key => $row){ ?>
-                                <option value="1"><?=$row['category_name']?></option>
-                            <?php } ?>
+                                <option value="<?=$row['category_id']?>"><?=$row['category_name']?></option>
+                                <?php } ?>
                             </select>
                             <div class="invalid-feedback">Please select a category.</div>
                         </div>
@@ -25,23 +25,23 @@
                         <div class="col-md-6">
                             <label class="form-label">Room Facilities</label>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="rooms_facility" value="Premium Bedding" id="facility1" required>
+                                <input class="form-check-input" type="checkbox" name="rooms_facility[]" value="Premium Bedding" id="facility1" >
                                 <label class="form-check-label" for="facility1">Premium Bedding</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="rooms_facility" value="Smart TV" id="facility2" required>
+                                <input class="form-check-input" type="checkbox" name="rooms_facility[]" value="Smart TV" id="facility2">
                                 <label class="form-check-label" for="facility2">Smart TV</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="rooms_facility" value="High-Speed Wi-Fi" id="facility3" required>
+                                <input class="form-check-input" type="checkbox" name="rooms_facility[]" value="High-Speed Wi-Fi" id="facility3">
                                 <label class="form-check-label" for="facility3">High-Speed Wi-Fi</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="rooms_facility" value="Jain-Friendly Ambiance" id="facility4" required>
+                                <input class="form-check-input" type="checkbox" name="rooms_facility[]" value="Jain-Friendly Ambiance" id="facility4">
                                 <label class="form-check-label" for="facility4">Jain-Friendly Ambiance</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="rooms_facility" value="24/7 Service" id="facility5" required>
+                                <input class="form-check-input" type="checkbox" name="rooms_facility[]" value="24/7 Service" id="facility5">
                                 <label class="form-check-label" for="facility5">24/7 Service</label>
                             </div>
                         </div>
