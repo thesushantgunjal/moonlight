@@ -78,8 +78,40 @@ class In extends CI_Controller
         $this->My_model->insert("signup",$_POST);
         redirect(base_url());
     }
-    // new user CRUD end
+    public function do_login()
+    {
+        // print_r($_POST);
+        if(isset($_POST['email']) && isset($_POST['password']))
+        {
+            $data=$this->My_model->select_where("signup",$_POST);
+            // print_r($data[0]);
+            if(isset($data[0]['register_id']))
+            {
+                // echo "yes";
+                $_SESSION['register_id'] = $data[0]['register_id'];
+                redirect(base_url('in/user_dashboard'));
+            }
+            else
+            {
+                ?>
+                <script>alert('Invalid Email & Password')</script>
+                <?php
+                redirect(base_url('in/sign_in'));
+            }
 
+        }
+        else
+        {
+            echo "Invalid Credentials";
+        }
+    }
+    // new user CRUD end
+    public function user_dashboard()
+    {
+        $this->navbar();
+        $this->load->view('in/user_dashboard');
+        $this->footer();
+    }
     public function check_availability()
     {
         $this->navbar();
