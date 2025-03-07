@@ -175,7 +175,7 @@
                     </div>
                     <div class="col-12 col-md-2">
                         <div class="cs_form_item cs_date_item position-relative">
-                            <input type="number" name="" min="0" max="10"
+                            <input type="number" name="adults" min="1" max="10"
                                 class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
                                 placeholder="Adults">
                         </div>
