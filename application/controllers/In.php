@@ -72,7 +72,13 @@ class In extends CI_Controller
     {
         $this->load->view('in/sign_up');
     }
-
+    // new user CRUD
+    public function save_user()
+    {
+        $this->My_model->insert("signup",$_POST);
+        redirect(base_url());
+    }
+    // new user CRUD end
 
     public function check_availability()
     {

@@ -26,19 +26,27 @@
                                 <img src="<?= base_url() ?>assets/login/images/logo.svg" alt="logo" class="logo">
                             </div>
                             <p class="login-card-description">Sign up your account</p>
-                            <form action="#!">
+                            <form action="<?=base_url('in/save_user')?>" method="post">
+                                <div class="form-group">
+                                    <label for="name" class="sr-only">Name</label>
+                                    <input type="text" name="name" id="name" class="form-control shadow-none" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone_no" class="sr-only">Phone No</label>
+                                    <input type="number" name="phone_no" id="phone_no" class="form-control shadow-none" placeholder="Enter Phone No">
+                                </div>
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
+                                    <input type="email" name="email" id="email" class="form-control shadow-none" placeholder="Enter Your Email">
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="password" class="sr-only">Password</label>
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="***********">
+                                    <input type="password" name="password" id="password" class="form-control shadow-none" placeholder="***********">
                                 </div>
-                                <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+                                <input id="login" class="btn btn-block login-btn mb-4" type="submit" value="Register Now">
                             </form>
                             <a href="#!" class="forgot-password-link">Forgot password?</a>
-                            <p class="login-card-footer-text">Don't have an account? <a href="<?=base_url()?>in/sign_in" class="text-reset">Login here</a></p>
+                            <!-- <p class="login-card-footer-text">Don't have an account? <a href="<?=base_url()?>in/sign_in" class="text-reset">Login here</a></p> -->
                             <nav class="login-card-footer-nav">
                                 <a href="#!">Terms of use.</a>
                                 <a href="#!">Privacy policy</a>
@@ -47,32 +55,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="card login-card">
-        <img src="<?= base_url() ?>assets/login/images/login.jpg" alt="login" class="login-card-img">
-        <div class="card-body">
-          <h2 class="login-card-title">Login</h2>
-          <p class="login-card-description">Sign in to your account to continue.</p>
-          <form action="#!">
-            <div class="form-group">
-              <label for="email" class="sr-only">Email</label>
-              <input type="email" name="email" id="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <label for="password" class="sr-only">Password</label>
-              <input type="password" name="password" id="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="form-prompt-wrapper">
-              <div class="custom-control custom-checkbox login-card-check-box">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Remember me</label>
-              </div>              
-              <a href="#!" class="text-reset">Forgot password?</a>
-            </div>
-            <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
-          </form>
-          <p class="login-card-footer-text">Don't have an account? <a href="#!" class="text-reset">Register here</a></p>
-        </div>
-      </div> -->
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
