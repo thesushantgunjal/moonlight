@@ -10,8 +10,9 @@ class In extends CI_Controller
 
     public function index()
     {
+        $data["category"] = $this->My_model->select("category");
         $this->navbar();
-        $this->load->view('in/index');
+        $this->load->view('in/index', $data);
         $this->footer();
     }
     public function about()

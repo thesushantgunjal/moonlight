@@ -166,10 +166,10 @@
                         <div class="cs_form_item cs_date_item position-relative">
                             <select
                                 class="form-select w-100 bg-transparent border-0 shadow-none text-white position-relative">
-                                <option class="bg-black" selected>Rooms</option>
-                                <option class="bg-black">Standard</option>
-                                <option class="bg-black">Deluxe</option>
-                                <option class="bg-black">Premium</option>
+                                <option class="bg-black" selected disabled>Select Room</option>
+                                <?php foreach($category as $key => $row){ ?>
+                                <option value="<?=$row['category_id']?>" class="bg-black"><?=$row['category_name']?></option>
+                                <?php } ?>
                             </select>
                         </div>
                     </div>
