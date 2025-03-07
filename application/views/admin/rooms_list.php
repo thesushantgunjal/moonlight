@@ -8,28 +8,30 @@
                     style="width:100%">
                     <thead>
                         <tr>
+                            <th scope="col" class="fw-bold" width="13%">Action</th>
                             <th scope="col" class="fw-bold">Sr No</th>
                             <th scope="col" class="fw-bold">Category Name</th>
                             <th scope="col" class="fw-bold">Room No</th>
                             <th scope="col" class="fw-bold">Facilities</th>
                             <th scope="col" class="fw-bold">Main Image</th>
                             <th scope="col" class="fw-bold">Booking Status</th>
-                            <th scope="col" class="fw-bold">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Standard</td>
-                            <td>101</td>
-                            <td>Wi-Fi, TV, AC</td>
-                            <td><img src="room1.jpg" alt="Room" width="50"></td>
-                            <td>Free</td>
-                            <td>
-                                <button class="btn btn-sm btn-warning">Edit</button>
-                                <button class="btn btn-sm btn-danger">Delete</button>
-                            </td>
-                        </tr>
+                        <?php foreach ($rooms as $key => $row) { ?>
+                            <tr>
+                                <td>
+                                    <a href="<?= base_url() ?>admin/edit_rooms/<?= $row['rooms_id'] ?>" class="btn btn-primary btn-sm"><i class="bx bxs-edit"></i></a>
+                                    <a href="<?= base_url() ?>admin/edit_rooms/<?= $row['rooms_id'] ?>" class="btn btn-danger btn-sm"><i class="bx bxs-trash"></i></a>
+                                </td>
+                                <td><?= $key + 1 ?></td>
+                                <td><?= $row['category_id'] ?></td>
+                                <td><?= $row['rooms_no'] ?></td>
+                                <td><?= $row['rooms_facility'] ?></td>
+                                <td><img src="<?= base_url() ?>uploads/<?= $row['rooms_main_image'] ?>" width="100" alt=""></td>
+                                <td><?= $row['booking_status'] ?></td>
+                            </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

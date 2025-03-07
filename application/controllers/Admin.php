@@ -116,7 +116,6 @@ class Admin extends CI_Controller
         }
 
         $this->My_model->insert("rooms", $_POST);
-
         redirect(base_url() . "admin/rooms");
     }
 
@@ -137,8 +136,9 @@ class Admin extends CI_Controller
 
     public function rooms_list()
     {
+        $data["rooms"] = $this->My_model->select("rooms");
         $this->navbar();
-        $this->load->view("admin/rooms_list");
+        $this->load->view("admin/rooms_list", $data);
         $this->footer();
     }
     protected function footer()
