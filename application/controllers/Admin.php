@@ -56,7 +56,7 @@ class Admin extends CI_Controller
         $this->load->view("admin/dashboard");
         $this->footer();
     }
-    
+
     // Category CRUD Start
     public function category()
     {
@@ -93,9 +93,22 @@ class Admin extends CI_Controller
     // Category CRUD End
     public function rooms()
     {
+        $data["category"] = $this->My_model->select("category");
         $this->navbar();
-        $this->load->view("admin/rooms");
+        $this->load->view("admin/rooms", $data);
         $this->footer();
+    }
+
+    public function save_rooms()
+    {
+        echo "<pre>";
+        print_r($_POST);
+        print_r($_FILES);
+        if ($_FILES['rooms_main_image']['name'] != '') {
+            $filename = time() . $_FILES['rooms_main_image']['name'];
+            move_uploaded_file($_FILES["rooms_main_image"]['tmp_name'], "uploads/" . $filename);
+            $_POST["rooms_main_image"] = $filename;
+        }
     }
 
     public function booked_rooms()
@@ -109,6 +122,13 @@ class Admin extends CI_Controller
     {
         $this->navbar();
         $this->load->view("admin/check_in");
+        $this->footer();
+    }
+
+    public function rooms_list()
+    {
+        $this->navbar();
+        $this->load->view("admin/rooms_list");
         $this->footer();
     }
     protected function footer()

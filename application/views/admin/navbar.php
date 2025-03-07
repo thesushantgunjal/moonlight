@@ -128,13 +128,6 @@
               <div class="text-truncate" data-i18n="Category">Category</div>
             </a>
           </li>
-          <!-- Rooms -->
-          <li class="menu-item">
-            <a href="<?= base_url() ?>admin/rooms" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-home-smile"></i>
-              <div class="text-truncate" data-i18n="Rooms">Rooms</div>
-            </a>
-          </li>
           <!-- Booking -->
           <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -151,6 +144,26 @@
               <li class="menu-item">
                 <a href="<?= base_url() ?>admin/check_in" class="menu-link">
                   <div class="text-truncate" data-i18n="Check In">Check In</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-layout"></i>
+              <div class="text-truncate" data-i18n="Rooms">Rooms</div>
+            </a>
+
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="<?= base_url() ?>admin/rooms" class="menu-link">
+                  <div class="text-truncate" data-i18n="Add Rooms">Add Rooms</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="<?= base_url() ?>admin/rooms_list" class="menu-link">
+                  <div class="text-truncate" data-i18n="Rooms List">Rooms List</div>
                 </a>
               </li>
             </ul>
