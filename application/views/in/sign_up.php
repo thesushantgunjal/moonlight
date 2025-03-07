@@ -25,7 +25,7 @@
                             <div class="brand-wrapper">
                                 <img src="<?= base_url() ?>assets/login/images/logo.svg" alt="logo" class="logo">
                             </div>
-                            <p class="login-card-description">Sign into your account</p>
+                            <p class="login-card-description">Sign up your account</p>
                             <form action="#!">
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>

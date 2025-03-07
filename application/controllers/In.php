@@ -68,11 +68,9 @@ class In extends CI_Controller
         $this->load->view("in/sign_in");
     }
 
-    public function login()
+    public function sign_up()
     {
-        $this->navbar();
-        $this->load->view('in/login');
-        $this->footer();
+        $this->load->view('in/sign_up');
     }
 
 
