@@ -146,18 +146,18 @@
     </div>
     <div class="cs_hero_7_form">
         <div class="container py-4">
-            <form action="#" method="post">
+            <form action="<?=base_url()?>in/check_availability" method="post">
                 <div class="row g-3">
                     <div class="col-12 col-md-3">
                         <div class="cs_form_item cs_date_item position-relative">
-                            <input type="datetime-local" name=""
+                            <input type="date" name="check_in_date"
                                 class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
                                 placeholder="Check In Date">
                         </div>
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="cs_form_item cs_date_item position-relative">
-                            <input type="datetime-local" name=""
+                            <input type="date" name="check_out_date"
                                 class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
                                 placeholder="Check In Date">
                         </div>

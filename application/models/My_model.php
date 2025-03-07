@@ -35,4 +35,33 @@ class My_model extends CI_Model
         $this->db->join("category", "category.category_id = rooms.category_id", "left");
         return $this->db->get()->result_array();
     }
+
+    public function getAvailableRooms($check_in_date, $check_out_date, $category_id)
+    {
+        $sql = "SELECT * FROM rooms 
+                WHERE category_id = ? 
+                AND booking_status = 'Available' 
+                AND rooms_id NOT IN (
+                    SELECT rooms_id FROM bookings 
+                    WHERE booking_status != 'Cancelled' 
+                    AND (
+                        (? BETWEEN check_in_date AND check_out_date) OR
+                        (? BETWEEN check_in_date AND check_out_date) OR
+                        (check_in_date BETWEEN ? AND ?) OR
+                        (check_out_date BETWEEN ? AND ?)
+                    )
+                )";
+
+        $query = $this->db->query($sql, [
+            $category_id,
+            $check_in_date,
+            $check_out_date,
+            $check_in_date,
+            $check_out_date,
+            $check_in_date,
+            $check_out_date
+        ]);
+
+        return $query->result_array();
+    }
 }

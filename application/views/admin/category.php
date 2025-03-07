@@ -15,22 +15,12 @@
                 <button type="button" class="btn-close rounded-circle bg-dark" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="POST" action="<?= base_url('admin/save_category') ?>">
+                <form method="post" action="<?= base_url('admin/save_category') ?>">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <label for="category_name" class="form-label">Enter Category Name</label>
                             <input class="form-control" type="text" id="category_name" name="category_name"
                                 placeholder="Enter Category Name" autofocus required />
-                        </div>
-                        <div class="col-md-3">
-                            <label for="rate1" class="form-label">Mon to Fri Rate</label>
-                            <input class="form-control" type="text" id="rate1" name="rate1"
-                                placeholder="Enter Mon to Fri Rate" autofocus required />
-                        </div>
-                        <div class="col-md-3">
-                            <label for="rate2" class="form-label">Sat to Sun Rate</label>
-                            <input class="form-control" type="text" id="rate2" name="rate2"
-                                placeholder="Enter Sat to Sun Rate" autofocus required />
                         </div>
                     </div>
             </div>
@@ -50,11 +40,9 @@
                 <table class="table table-bordered table-hover table-sm text-center display nowrap" id="example" style="width:100%">
                     <thead>
                         <tr>
+                            <th scope="col" class="fw-bold">Action</th>
                             <th scope="col" class="fw-bold">Sr No</th>
                             <th scope="col" class="fw-bold">Category Name</th>
-                            <th scope="col" class="fw-bold">Mon to Fri Rate</th>
-                            <th scope="col" class="fw-bold">Sat to Sun Rate</th>
-                            <th scope="col" class="fw-bold">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,10 +50,6 @@
                         foreach ($category as $key => $list) {
                         ?>
                             <tr>
-                                <td><?= $key + 1 ?></td>
-                                <td><?= $list['category_name'] ?></td>
-                                <td>&#8377;.<?= $list['rate1'] ?></td>
-                                <td>&#8377;.<?= $list['rate2'] ?></td>
                                 <td>
                                     <a class="btn btn-sm btn-primary" href="<?= base_url('admin/edit_category') ?>/<?= $list['category_id'] ?>">
                                         <i class='bx bx-edit'></i>
@@ -74,6 +58,8 @@
                                         <i class='bx bx-trash'></i>
                                     </a>
                                 </td>
+                                <td><?= $key + 1 ?></td>
+                                <td><?= $list['category_name'] ?></td>
                             </tr>
                         <?php
                         }

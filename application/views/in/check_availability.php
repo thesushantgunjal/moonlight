@@ -6,6 +6,19 @@
  </section>
  <!-- End Page Heading Section -->
 
+
+ <?php if (!empty($rooms)) { ?>
+    <h3>Available Rooms</h3>
+    <ul>
+        <?php foreach ($rooms as $room) { ?>
+            <li>Room Number: <?= $room['room_no'] ?> - Price: <?= $room['mon_to_fri_rate'] ?> per night</li>
+        <?php } ?>
+    </ul>
+<?php } else { ?>
+    <h3>No rooms available for selected dates.</h3>
+<?php } ?>
+
+
  <!-- Start Room Details -->
  <section>
      <div class="cs_height_100 cs_height_lg_80"></div>
