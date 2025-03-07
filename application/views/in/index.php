@@ -145,51 +145,52 @@
         </div>
     </div>
     <div class="cs_hero_7_form">
-    <div class="container py-4">
-        <form action="#" method="post">
-            <div class="row g-3">
-                <div class="col-12 col-md-3">
-                    <div class="cs_form_item cs_date_item position-relative">
-                        <input type="datetime-local" name=""
-                            class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
-                            placeholder="Check In Date">
+        <div class="container py-4">
+            <form action="#" method="post">
+                <div class="row g-3">
+                    <div class="col-12 col-md-3">
+                        <div class="cs_form_item cs_date_item position-relative">
+                            <input type="datetime-local" name=""
+                                class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
+                                placeholder="Check In Date">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="cs_form_item cs_date_item position-relative">
+                            <input type="datetime-local" name=""
+                                class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
+                                placeholder="Check In Date">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="cs_form_item cs_date_item position-relative">
+                            <select
+                                class="form-select w-100 bg-transparent border-0 shadow-none text-white position-relative">
+                                <option class="bg-black" selected>Rooms</option>
+                                <option class="bg-black">Standard</option>
+                                <option class="bg-black">Deluxe</option>
+                                <option class="bg-black">Premium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="cs_form_item cs_date_item position-relative">
+                            <input type="number" name="" min="0" max="10"
+                                class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
+                                placeholder="Adults">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <div class="cs_form_item_btn">
+                            <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+                                Check Availability
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <div class="cs_form_item cs_date_item position-relative">
-                        <input type="datetime-local" name=""
-                            class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
-                            placeholder="Check In Date">
-                    </div>
-                </div>
-                <div class="col-12 col-md-2">
-                    <div class="cs_form_item cs_date_item position-relative">
-                        <select class="form-select w-100 bg-transparent border-0 shadow-none text-white position-relative">
-                            <option class="bg-black" selected>Rooms</option>
-                            <option class="bg-black">Standard</option>
-                            <option class="bg-black">Deluxe</option>
-                            <option class="bg-black">Premium</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-12 col-md-2">
-                    <div class="cs_form_item cs_date_item position-relative">
-                        <input type="number" name="" min="0" max="10"
-                            class="form-control w-100 bg-transparent border-0 shadow-none text-white position-relative"
-                            placeholder="Adults">
-                    </div>
-                </div>
-                <div class="col-12 col-md-2">
-                    <div class="cs_form_item_btn">
-                        <button class="cs_btn cs_style_1 cs_color_1 cs_fs_15 cs_medium cs_radius_5 w-100">
-                            Check Availability
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-</div>
 
 </section>
 <!-- End Hero Section -->
@@ -1006,7 +1007,7 @@
                             savings.</p>
                         <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
                             >>>>>> Stashed changes
-                            <<<<<<< HEAD <a href="<?=base_url()?>"=======<a href="<?= base_url() ?>">>>>>>>
+                            <<<<<<< HEAD <a href="<?= base_url() ?>"=======<a href="<?= base_url() ?>">>>>>>>
                                 c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
                                 <<<<<<< Updated upstream>>>>>>> Stashed changes
                                     =======
@@ -1049,7 +1050,7 @@
                             exclusive benefits.</p>
                         <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
                             >>>>>> Stashed changes
-                            <<<<<<< HEAD <a href="<?=base_url()?>"=======<a href="<?= base_url() ?>">>>>>>>
+                            <<<<<<< HEAD <a href="<?= base_url() ?>"=======<a href="<?= base_url() ?>">>>>>>>
                                 c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
                                 <<<<<<< Updated upstream>>>>>>> Stashed changes
                                     =======
@@ -1092,7 +1093,7 @@
                             offers.</p>
                         <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
                             >>>>>> Stashed changes
-                            <<<<<<< HEAD <a href="<?=base_url()?>"=======<a href="<?= base_url() ?>">>>>>>>
+                            <<<<<<< HEAD <a href="<?= base_url() ?>"=======<a href="<?= base_url() ?>">>>>>>>
                                 c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
                                 <<<<<<< Updated upstream>>>>>>> Stashed changes
                                     =======
