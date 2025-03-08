@@ -56,7 +56,13 @@ class Admin extends CI_Controller
         $this->load->view("admin/dashboard");
         $this->footer();
     }
-
+    public function user()
+    {
+        $this->navbar();
+        $data['users']=$this->My_model->select("signup");
+        $this->load->view("admin/user",$data);
+        $this->footer();
+    }
     // Category CRUD Start
     public function category()
     {
