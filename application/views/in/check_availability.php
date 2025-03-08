@@ -24,7 +24,7 @@
                          <div class="col-md-12">
                              <div class="cs_form_item cs_date_item position-relative border bg-light p-2">
                                  <input type="date" title="Check Out:" name="check_out_date"
-                                     class="form-control w-100 border-0 shadow-none position-relative" require>
+                                     class="form-control w-100 border-0 shadow-none position-relative">
                              </div>
                          </div>
 
@@ -104,9 +104,9 @@
                                      <li>Free Wi-Fi</li>
                                  </ul>
                                  <div class="cs_form_item_btn mt-3">
-                                 <button class="cs_btn cs_style_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+                                 <a href="<?=base_url()?>in/complete_reservation/<?=$rooms[0]['rooms_id']?>" class="cs_btn cs_style_1 cs_fs_15 cs_medium cs_radius_5 w-100">
                                      Book Now
-                                 </button>
+                                 </a>
                              </div>
                              </div>
                              
