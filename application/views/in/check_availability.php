@@ -18,13 +18,13 @@
                          <div class="col-md-12">
                              <div class="cs_form_item cs_date_item position-relative border bg-light p-2">
                                  <input type="date" title="Check In:" name="check_in_date"
-                                     class="form-control w-100 border-0 shadow-none position-relative">
+                                     class="form-control w-100 border-0 shadow-none position-relative" required>
                              </div>
                          </div>
                          <div class="col-md-12">
                              <div class="cs_form_item cs_date_item position-relative border bg-light p-2">
                                  <input type="date" title="Check Out:" name="check_out_date"
-                                     class="form-control w-100 border-0 shadow-none position-relative">
+                                     class="form-control w-100 border-0 shadow-none position-relative" require>
                              </div>
                          </div>
 

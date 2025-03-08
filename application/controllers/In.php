@@ -111,22 +111,6 @@ class In extends CI_Controller
 
     public function check_availability()
     {
-        // $check_in_date = $this->input->post('check_in_date');
-        // $check_out_date = $this->input->post('check_out_date');
-        // $category_id = $this->input->post('category_id');
-        // // echo "<pre>";
-        // print_r($check_in_date);
-        // print_r($check_out_date);
-        // print_r($category_id);
-
-        // // Get available rooms
-        // $available_rooms = $this->My_model->getAvailableRooms($check_in_date, $check_out_date, $category_id);
-        // // print_r([$available_rooms]);
-
-        // $data["rooms"] = $available_rooms;
-        // print_r([$data]);
-
-
         $check_in_date = $this->input->post('check_in_date');
         $check_out_date = $this->input->post('check_out_date');
         $category_id = $this->input->post('category_id');
@@ -170,7 +154,7 @@ class In extends CI_Controller
         }
 
         $data["rooms"] = $available_rooms;
-
+        $data["category"] = $this->My_model->select("category");
         $this->navbar();
         $this->load->view("in/check_availability", $data);
         $this->footer();
