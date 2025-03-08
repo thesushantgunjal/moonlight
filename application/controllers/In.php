@@ -129,7 +129,7 @@ class In extends CI_Controller
 
         // Get available rooms
         $available_rooms = $this->My_model->getAvailableRooms($check_in_date, $check_out_date, $category_id);
-        
+
         $total_price = 0;
 
         foreach ($available_rooms as &$room) {
@@ -162,6 +162,7 @@ class In extends CI_Controller
 
     public function complete_reservation()
     {
+        
         $this->navbar();
         $this->load->view("in/complete_reservation");
         $this->footer();
