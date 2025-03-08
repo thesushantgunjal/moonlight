@@ -13,7 +13,7 @@
      <div class="container">
          <div class="row cs_gap_y_50">
              <div class="col-lg-4">
-                 <form class="" action="<?=base_url()?>in/check_availability" method="post">
+                 <form class="sticky-top" action="<?=base_url()?>in/check_availability" method="post">
                      <div class="row g-3">
                          <div class="col-md-12">
                              <div class="cs_form_item cs_date_item position-relative border bg-light p-2">
@@ -103,7 +103,13 @@
                                      <li>3-5 Guests</li>
                                      <li>Free Wi-Fi</li>
                                  </ul>
+                                 <div class="cs_form_item_btn mt-3">
+                                 <button class="cs_btn cs_style_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+                                     Book Now
+                                 </button>
                              </div>
+                             </div>
+                             
                          </div>
                      </div>
                      <?php } ?>
