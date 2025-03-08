@@ -6,19 +6,6 @@
  </section>
  <!-- End Page Heading Section -->
 
-
- <?php if (!empty($rooms)) { ?>
-    <h3>Available Rooms</h3>
-    <ul>
-        <?php foreach ($rooms as $room) { ?>
-            <li>Room Number: <?= $room['room_no'] ?> - Price: <?= $room['mon_to_fri_rate'] ?> per night</li>
-        <?php } ?>
-    </ul>
-<?php } else { ?>
-    <h3>No rooms available for selected dates.</h3>
-<?php } ?>
-
-
  <!-- Start Room Details -->
  <section>
      <div class="cs_height_100 cs_height_lg_80"></div>
@@ -104,114 +91,44 @@
              </div>
              <div class="col-lg-8">
                  <div class="row cs_gap_y_60">
-                     <div class="col-xl-6 col-lg-12 col-md-6">
-                         <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                             <a href="<?= base_url() ?>in/room_detail" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                                 <img src="<?= base_url() ?>assets/web/assets/img/room_4.jpg" alt="Room">
-                                 <span class="cs_card_btn position-absolute cs_zindex_2">
-                                     <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                                         <b>Details View</b>
-                                         <span>
-                                             <i>
-                                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                     <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                 </svg>
-                                             </i>
-                                             <i>
-                                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                     <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                 </svg>
-                                             </i>
+                     <?php foreach ($rooms as $key => $row) { ?>
+                         <div class="col-xl-6 col-lg-12 col-md-6">
+                             <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
+                                 <a href="<?= base_url() ?>in/room_detail" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
+                                     <img src="<?= base_url() ?>assets/web/assets/img/room_4.jpg" alt="Room">
+                                     <span class="cs_card_btn position-absolute cs_zindex_2">
+                                         <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
+                                             <b>Details View</b>
+                                             <span>
+                                                 <i>
+                                                     <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
+                                                     </svg>
+                                                 </i>
+                                                 <i>
+                                                     <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
+                                                     </svg>
+                                                 </i>
+                                             </span>
                                          </span>
                                      </span>
-                                 </span>
-                             </a>
-                             <div class="cs_card_info position-relative">
-                                 <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="<?= base_url() ?>in/room_detail">Deluxe Room</a></h2>
-                                 <div class="cs_card_price cs_mb_17">
-                                     <span class="cs_primary_color">From</span>
-                                     <span class="cs_accent_color cs_fs_38 cs_primary_font">&#8377;320/Night</span>
+                                 </a>
+                                 <div class="cs_card_info position-relative">
+                                     <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="<?= base_url() ?>in/room_detail"><?= $row['category_name'] ?></a></h2>
+                                     <div class="cs_card_price cs_mb_17">
+                                         <span class="cs_primary_color">From</span>
+                                         <span class="cs_accent_color cs_fs_38 cs_primary_font">&#8377; <?= $row['mon_to_fri_rate'] ?></span>
+                                     </div>
+                                     <ul class="cs_card_list cs_mp_0">
+                                         <li>110 Sq</li>
+                                         <li>3-5 Guests</li>
+                                         <li>Free Wi-Fi</li>
+                                     </ul>
                                  </div>
-                                 <ul class="cs_card_list cs_mp_0">
-                                     <li>110 Sq</li>
-                                     <li>3-5 Guests</li>
-                                     <li>Free Wi-Fi</li>
-                                 </ul>
                              </div>
                          </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-12 col-md-6">
-                         <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                             <a href="<?= base_url() ?>in/room_detail" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                                 <img src="<?= base_url() ?>assets/web/assets/img/room_5.jpg" alt="Room">
-                                 <span class="cs_card_btn position-absolute cs_zindex_2">
-                                     <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                                         <b>Details View</b>
-                                         <span>
-                                             <i>
-                                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                     <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                 </svg>
-                                             </i>
-                                             <i>
-                                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                     <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                 </svg>
-                                             </i>
-                                         </span>
-                                     </span>
-                                 </span>
-                             </a>
-                             <div class="cs_card_info position-relative">
-                                 <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="<?= base_url() ?>in/room_detail">Standard Room</a></h2>
-                                 <div class="cs_card_price cs_mb_17">
-                                     <span class="cs_primary_color">From</span>
-                                     <span class="cs_accent_color cs_fs_38 cs_primary_font">&#8377;450/Night</span>
-                                 </div>
-                                 <ul class="cs_card_list cs_mp_0">
-                                     <li>110 Sq</li>
-                                     <li>3-5 Guests</li>
-                                     <li>Free Wi-Fi</li>
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-12 col-md-6">
-                         <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
-                             <a href="<?= base_url() ?>in/room_detail" class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                                 <img src="<?= base_url() ?>assets/web/assets/img/room_6.jpg" alt="Room">
-                                 <span class="cs_card_btn position-absolute cs_zindex_2">
-                                     <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
-                                         <b>Details View</b>
-                                         <span>
-                                             <i>
-                                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                     <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                 </svg>
-                                             </i>
-                                             <i>
-                                                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                     <path d="M9.00431 0.872828C9.00431 0.458614 8.66852 0.122828 8.25431 0.122828L1.50431 0.122827C1.0901 0.122827 0.754309 0.458614 0.754309 0.872828C0.754309 1.28704 1.0901 1.62283 1.50431 1.62283H7.50431V7.62283C7.50431 8.03704 7.84009 8.37283 8.25431 8.37283C8.66852 8.37283 9.00431 8.03704 9.00431 7.62283L9.00431 0.872828ZM1.53033 8.65747L8.78464 1.40316L7.72398 0.342497L0.46967 7.59681L1.53033 8.65747Z" fill="currentColor"></path>
-                                                 </svg>
-                                             </i>
-                                         </span>
-                                     </span>
-                                 </span>
-                             </a>
-                             <div class="cs_card_info position-relative">
-                                 <h2 class="cs_card_title cs_fs_50 cs_mb_4"><a href="<?= base_url() ?>in/room_detail">Premium Room</a></h2>
-                                 <div class="cs_card_price cs_mb_17">
-                                     <span class="cs_primary_color">From</span>
-                                     <span class="cs_accent_color cs_fs_38 cs_primary_font">&#8377;520/Night</span>
-                                 </div>
-                                 <ul class="cs_card_list cs_mp_0">
-                                     <li>110 Sq</li>
-                                     <li>3-5 Guests</li>
-                                     <li>Free Wi-Fi</li>
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
+                     <?php } ?>
                  </div>
              </div>
          </div>

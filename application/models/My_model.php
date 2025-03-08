@@ -38,19 +38,23 @@ class My_model extends CI_Model
 
     public function getAvailableRooms($check_in_date, $check_out_date, $category_id)
     {
-        $sql = "SELECT * FROM rooms 
-                WHERE category_id = ? 
-                AND booking_status = 'Available' 
-                AND rooms_id NOT IN (
-                    SELECT rooms_id FROM bookings 
-                    WHERE booking_status != 'Cancelled' 
-                    AND (
-                        (? BETWEEN check_in_date AND check_out_date) OR
-                        (? BETWEEN check_in_date AND check_out_date) OR
-                        (check_in_date BETWEEN ? AND ?) OR
-                        (check_out_date BETWEEN ? AND ?)
-                    )
-                )";
+        $sql = "SELECT rooms.*, category.category_name 
+FROM rooms
+LEFT JOIN category ON category.category_id = rooms.category_id
+WHERE rooms.category_id = ?
+AND rooms.booking_status = 'Available' 
+AND rooms.rooms_id NOT IN (
+    SELECT bookings.rooms_id 
+    FROM bookings 
+    WHERE bookings.status = 'Confirm' 
+    AND (
+        (? BETWEEN bookings.check_in_date AND bookings.check_out_date) OR
+        (? BETWEEN bookings.check_in_date AND bookings.check_out_date) OR
+        (bookings.check_in_date BETWEEN ? AND ?) OR
+        (bookings.check_out_date BETWEEN ? AND ?)
+    )
+);
+";
 
         $query = $this->db->query($sql, [
             $category_id,

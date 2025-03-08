@@ -164,7 +164,7 @@
                     </div>
                     <div class="col-12 col-md-2">
                         <div class="cs_form_item cs_date_item position-relative">
-                            <select
+                            <select name="category_id"
                                 class="form-select w-100 bg-transparent border-0 shadow-none text-white position-relative">
                                 <option class="bg-black" selected disabled>Select Room</option>
                                 <?php foreach($category as $key => $row){ ?>

@@ -111,62 +111,70 @@ class In extends CI_Controller
 
     public function check_availability()
     {
+        // $check_in_date = $this->input->post('check_in_date');
+        // $check_out_date = $this->input->post('check_out_date');
+        // $category_id = $this->input->post('category_id');
+        // // echo "<pre>";
+        // print_r($check_in_date);
+        // print_r($check_out_date);
+        // print_r($category_id);
+
+        // // Get available rooms
+        // $available_rooms = $this->My_model->getAvailableRooms($check_in_date, $check_out_date, $category_id);
+        // // print_r([$available_rooms]);
+
+        // $data["rooms"] = $available_rooms;
+        // print_r([$data]);
+
+
         $check_in_date = $this->input->post('check_in_date');
         $check_out_date = $this->input->post('check_out_date');
         $category_id = $this->input->post('category_id');
 
+        // Convert dates to DateTime objects
+        $check_in = new DateTime($check_in_date);
+        $check_out = new DateTime($check_out_date);
+
+        // Ensure check-in is at 12:00 PM and check-out is at 10:00 AM
+        $check_in->setTime(12, 0);
+        $check_out->setTime(10, 0);
+
+        // Calculate the total number of 22-hour days
+        $interval = $check_in->diff($check_out);
+        $total_days = $interval->days;
+
         // Get available rooms
         $available_rooms = $this->My_model->getAvailableRooms($check_in_date, $check_out_date, $category_id);
 
-        // Load view with available rooms
+        $total_price = 0;
+
+        foreach ($available_rooms as &$room) {
+            $mon_to_fri_rate = $room['mon_to_fri_rate'];
+            $sat_to_sun_rate = $room['sat_to_sun_rate'];
+
+            $current_date = clone $check_in;
+            for ($i = 0; $i < $total_days; $i++) {
+                $day_of_week = $current_date->format('N'); // 1 = Monday, 7 = Sunday
+
+                if ($day_of_week >= 1 && $day_of_week <= 5) {
+                    $total_price += $mon_to_fri_rate;
+                } else {
+                    $total_price += $sat_to_sun_rate;
+                }
+
+                // Move to the next day
+                $current_date->modify('+1 day');
+            }
+
+            $room['total_price'] = $total_price;
+        }
+
         $data["rooms"] = $available_rooms;
 
-        echo "<pre>";
-        print_r($data);
-        // $this->navbar();
-        $this->load->view("in/check_availability");
+        $this->navbar();
+        $this->load->view("in/check_availability", $data);
         $this->footer();
-       
     }
-
-
-    // public function check_availability()
-    // {
-    //     $category_id = $this->input->post('category_id');
-    //     $check_in_date = $this->input->post('check_in_date');
-    //     $check_out_date = $this->input->post('check_out_date');
-
-    //     // Query to get available rooms
-    //     $this->db->where('category_id', $category_id);
-    //     $this->db->where("rooms_id NOT IN (
-    //         SELECT rooms_id FROM bookings 
-    //         WHERE status != 'Cancelled' 
-    //         AND (
-    //             ('$check_in_date' BETWEEN check_in_date AND check_out_date) OR 
-    //             ('$check_out_date' BETWEEN check_in_date AND check_out_date) OR
-    //             (check_in_date BETWEEN '$check_in_date' AND '$check_out_date') OR
-    //             (check_out_date BETWEEN '$check_in_date' AND '$check_out_date')
-    //         )
-    //     )", NULL, FALSE);
-
-    //     $query = $this->db->get('rooms');
-    //     $data["rooms"] = $query->result_array();
-
-    //     // Return JSON response for AJAX requests
-    //     if ($this->input->is_ajax_request()) {
-    //         echo json_encode($data["rooms"]);
-    //         return;
-    //     }
-      
-    //     // Load view with available rooms
-    //     $this->navbar();
-    //     $this->load->view("in/check_availability", $data);
-    //     $this->footer();
-    //     echo "<pre>";
-    //     print_r($data);
-    //     echo "</pre>";
-    // }
-
 
     public function complete_reservation()
     {
