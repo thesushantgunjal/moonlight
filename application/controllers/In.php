@@ -80,35 +80,6 @@ class In extends CI_Controller
         $this->load->view('in/sign_up');
     }
 
-    // new user CRUD
-    // public function save_user()
-    // {
-    //     $this->My_model->insert("signup", $_POST);
-    //     redirect(base_url());
-    // }
-
-    /*public function do_login()
-    {
-        if (isset($_POST['email']) && isset($_POST['password'])) {
-            $data = $this->My_model->select_where("signup", $_POST);
-            if (isset($data[0]['register_id'])) {
-                $_SESSION['register_id'] = $data[0]['register_id'];
-                redirect(base_url('in/user_dashboard'));
-            } else {
-                ?>
-                <script>
-                    alert('Invalid Email & Password')
-                </script>
-            <?php
-                redirect(base_url('in/sign_in'));
-            }
-        } else {
-            echo "Invalid Credentials";
-        }
-    }
-    */
-
-
     public function login_now()
     {
         // Set validation rules
@@ -117,6 +88,7 @@ class In extends CI_Controller
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email|trim|is_unique[users.email]', [
             'is_unique' => 'This email is already registered.'
         ]);
+        
         $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]|trim');
 
         if ($this->form_validation->run() == FALSE) {
