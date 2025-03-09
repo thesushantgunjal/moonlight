@@ -108,7 +108,12 @@ class In extends CI_Controller
         $this->load->view('in/user_dashboard');
         $this->footer();
     }
-
+    public function user_profile()
+    {
+        $this->navbar();
+        $this->load->view('in/user_profile');
+        $this->footer();
+    }
     public function check_availability()
     {
         $data["category"] = $this->My_model->select("category");
