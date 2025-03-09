@@ -55,14 +55,6 @@ class In extends CI_Controller
         $this->footer();
     }
 
-
-    // public function restaurant()
-    // {
-    //     $this->navbar();
-    //     $this->load->view("in/restaurant");
-    //     $this->footer();
-    // }
-
     public function contact()
     {
         $this->navbar();
@@ -88,7 +80,7 @@ class In extends CI_Controller
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email|trim|is_unique[users.email]', [
             'is_unique' => 'This email is already registered.'
         ]);
-        
+
         $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]|trim');
 
         if ($this->form_validation->run() == FALSE) {
