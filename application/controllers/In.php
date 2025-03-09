@@ -150,16 +150,17 @@ class In extends CI_Controller
     }
 
 
-    public function user_dashboard()
+    public function booked_rooms_overview()
     {
         $this->navbar();
-        $this->load->view('in/user_dashboard');
+        $this->load->view('in/booked_rooms_overview');
         $this->footer();
     }
-    public function user_profile()
+    
+    public function personal_profile()
     {
         $this->navbar();
-        $this->load->view('in/user_profile');
+        $this->load->view('in/personal_profile');
         $this->footer();
     }
     public function check_availability()

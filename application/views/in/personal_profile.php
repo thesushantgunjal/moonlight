@@ -3,26 +3,24 @@
     <div class="container py-5">
         <div class="row cs_gap_y_50">
             <div class="col-lg-4">
-                <form class="" action="<?=base_url()?>in/check_availability" method="post">
-                    <div class="row g-3">
-                        <div class=" col-md-12">
-                            <div class="cs_form_item_btn">
-                                <a href="<?=base_url('in/user_dashboard')?>"
-                                    class="cs_btn cs_style_1 cs_fs_15 cs_medium cs_radius_5 w-100">
-                                    Dashboard
-                                </a>
-                            </div>
-                        </div>
-                        <div class=" col-md-12">
-                            <div class="cs_form_item_btn">
-                                <a href="<?=base_url('in/user_profile')?>"
-                                    class="cs_btn cs_style_1 cs_fs_15 cs_medium cs_radius_5 w-100">
-                                    User Profile
-                                </a>
-                            </div>
+                <div class="row g-3">
+                    <div class=" col-md-12">
+                        <div class="cs_form_item_btn">
+                            <a href="<?= base_url('in/booked_rooms_overview') ?>"
+                                class="cs_btn cs_style_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+                                Booked Rooms Overview
+                            </a>
                         </div>
                     </div>
-                </form>
+                    <div class=" col-md-12">
+                        <div class="cs_form_item_btn">
+                            <a href="<?= base_url('in/personal_profile') ?>"
+                                class="cs_btn cs_style_1 cs_fs_15 cs_medium cs_radius_5 w-100">
+                                Your Personal Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <div class="col-lg-8">

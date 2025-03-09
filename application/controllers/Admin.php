@@ -59,7 +59,7 @@ class Admin extends CI_Controller
     public function user()
     {
         $this->navbar();
-        $data['users']=$this->My_model->select("signup");
+        $data['users']=$this->My_model->select("users");
         $this->load->view("admin/user",$data);
         $this->footer();
     }
