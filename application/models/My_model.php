@@ -36,34 +36,39 @@ class My_model extends CI_Model
         return $this->db->get()->result_array();
     }
 
+    // public function getAvailableRooms($check_in_date, $check_out_date, $category_id)
+    // {
+    //     $sql = "SELECT rooms.* FROM rooms
+    //         LEFT JOIN bookings ON rooms.rooms_id = bookings.rooms_id
+    //         WHERE rooms.category_id = ? 
+    //         AND (bookings.rooms_id IS NULL 
+    //              OR NOT (bookings.check_in_date <= ? AND bookings.check_out_date >= ?))
+    //         AND rooms.booking_status = 'Available'";
+
+    //     $query = $this->db->query($sql, [
+    //         $category_id,
+    //         $check_out_date,
+    //         $check_in_date
+    //     ]);
+
+    //     return $query->result_array();
+    // }
+
     public function getAvailableRooms($check_in_date, $check_out_date, $category_id)
     {
-        $sql = "SELECT rooms.*, category.category_name 
-FROM rooms
-LEFT JOIN category ON category.category_id = rooms.category_id
-WHERE rooms.category_id = ?
-AND rooms.booking_status = 'Available' 
-AND rooms.rooms_id NOT IN (
-    SELECT bookings.rooms_id 
-    FROM bookings 
-    WHERE bookings.status = 'Confirm' 
-    AND (
-        (? BETWEEN bookings.check_in_date AND bookings.check_out_date) OR
-        (? BETWEEN bookings.check_in_date AND bookings.check_out_date) OR
-        (bookings.check_in_date BETWEEN ? AND ?) OR
-        (bookings.check_out_date BETWEEN ? AND ?)
-    )
-);
-";
+        $sql = "SELECT rooms.*, category.category_name, rooms.mon_to_fri_rate, rooms.sat_to_sun_rate 
+            FROM rooms
+            LEFT JOIN bookings ON rooms.rooms_id = bookings.rooms_id
+            LEFT JOIN category ON rooms.category_id = category.category_id
+            WHERE rooms.category_id = ? 
+            AND (bookings.rooms_id IS NULL 
+                 OR NOT (bookings.check_in_date <= ? AND bookings.check_out_date >= ?))
+            AND rooms.booking_status = 'Available'";
 
         $query = $this->db->query($sql, [
             $category_id,
-            $check_in_date,
             $check_out_date,
-            $check_in_date,
-            $check_out_date,
-            $check_in_date,
-            $check_out_date
+            $check_in_date
         ]);
 
         return $query->result_array();
