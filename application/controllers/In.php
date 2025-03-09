@@ -3,6 +3,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class In extends CI_Controller
 {
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->library('form_validation'); // Load Validation Library
+    }
+
     protected function navbar()
     {
         $this->load->view("in/navbar");
@@ -72,36 +79,113 @@ class In extends CI_Controller
     {
         $this->load->view('in/sign_up');
     }
-    // new user CRUD
-    public function save_user()
-    {
-        $this->My_model->insert("signup", $_POST);
-        redirect(base_url());
-    }
 
-    public function do_login()
+    // new user CRUD
+    // public function save_user()
+    // {
+    //     $this->My_model->insert("signup", $_POST);
+    //     redirect(base_url());
+    // }
+
+    /*public function do_login()
     {
-        // print_r($_POST);
         if (isset($_POST['email']) && isset($_POST['password'])) {
             $data = $this->My_model->select_where("signup", $_POST);
-            // print_r($data[0]);
             if (isset($data[0]['register_id'])) {
-                // echo "yes";
                 $_SESSION['register_id'] = $data[0]['register_id'];
                 redirect(base_url('in/user_dashboard'));
             } else {
-?>
+                ?>
                 <script>
                     alert('Invalid Email & Password')
                 </script>
-<?php
+            <?php
                 redirect(base_url('in/sign_in'));
             }
         } else {
             echo "Invalid Credentials";
         }
     }
-    // new user CRUD end
+    */
+
+
+    public function login_now()
+    {
+        // Set validation rules
+        $this->form_validation->set_rules('name', 'Name', 'required|trim|min_length[3]');
+        $this->form_validation->set_rules('phone', 'Phone Number', 'required|numeric|exact_length[10]');
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|trim|is_unique[users.email]', [
+            'is_unique' => 'This email is already registered.'
+        ]);
+        $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]|trim');
+
+        if ($this->form_validation->run() == FALSE) {
+            // Validation failed, reload the form with errors
+            $this->load->view('in/sign_up');
+        } else {
+            // Collect form data
+            $data = [
+                'name'     => $this->input->post('name', true),
+                'phone'    => $this->input->post('phone', true),
+                'email'    => $this->input->post('email', true),
+                'password' => password_hash($this->input->post('password', true), PASSWORD_BCRYPT), // Securely hash password
+            ];
+
+            // Insert data into database
+            if ($this->Admin_model->register_user($data)) {
+                $this->session->set_flashdata('success', 'Account created successfully! Please login.');
+                redirect('in/sign_in');
+            } else {
+                $this->session->set_flashdata('error', 'Something went wrong! Try again.');
+                redirect('in/sign_up');
+            }
+        }
+    }
+
+
+    public function do_login()
+    {
+        // Set validation rules
+        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|trim');
+        $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]|trim');
+
+        if ($this->form_validation->run() == FALSE) {
+            // Validation failed, reload the login form with errors
+            $this->load->view('in/sign_in');
+        } else {
+            $email    = $this->input->post('email', true);
+            $password = $this->input->post('password', true);
+
+            // Check if user exists
+            $user = $this->Admin_model->get_user_by_email($email);
+
+            if ($user && password_verify($password, $user->password)) {
+                // Set session data
+                $session_data = [
+                    'user_id'  => $user->user_id,
+                    'user_name' => $user->name,
+                    'user_email' => $user->email,
+                    'logged_in' => true
+                ];
+                $this->session->set_userdata($session_data);
+
+                // Redirect to dashboard or home
+                redirect(base_url());
+            } else {
+                $this->session->set_flashdata('error', 'Invalid Email or Password');
+                redirect('in/sign_in');
+            }
+        }
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata(['user_id', 'user_name', 'user_email', 'logged_in']);
+        $this->session->sess_destroy();
+        redirect('in/sign_in');
+    }
+
+
     public function user_dashboard()
     {
         $this->navbar();

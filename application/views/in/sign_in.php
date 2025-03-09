@@ -20,13 +20,13 @@
                     <div class="col-md-5">
                         <img src="<?= base_url() ?>assets/login/images/login.jpg" alt="login" class="login-card-img">
                     </div>
-                    <div class="col-md-7">
+                    <!-- <div class="col-md-7">
                         <div class="card-body">
                             <div class="brand-wrapper">
                                 <img src="<?= base_url() ?>assets/login/images/moonlight.png" alt="logo" class="logo">
                             </div>
                             <p class="login-card-description">Welcome Back! Sign In to Your Account</p>
-                            <form action="<?=base_url('in/do_login')?>" method="POST">
+                            <form action="<?= base_url('in/do_login') ?>" method="POST">
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
                                     <input type="email" name="email" id="email" class="form-control shadow-none" placeholder="Email address">
@@ -38,7 +38,40 @@
                                 <input id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
                             </form>
                             <a href="#!" class="forgot-password-link">Forgot password?</a>
-                            <p class="login-card-footer-text">Don't have an account? <a href="<?=base_url()?>in/sign_up" class="text-reset">Sign up here</a></p>
+                            <p class="login-card-footer-text">Don't have an account? <a href="<?= base_url() ?>in/sign_up" class="text-reset">Sign up here</a></p>
+                            <nav class="login-card-footer-nav">
+                                <a href="#!">Terms of use.</a>
+                                <a href="#!">Privacy policy</a>
+                            </nav>
+                        </div>
+                    </div> -->
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <div class="brand-wrapper">
+                                <img src="<?= base_url() ?>assets/login/images/moonlight.png" alt="logo" class="logo">
+                            </div>
+                            <p class="login-card-description">Welcome Back! Sign In to Your Account</p>
+
+                            <?php if ($this->session->flashdata('error')): ?>
+                                <p style="color: red;"><?= $this->session->flashdata('error') ?></p>
+                            <?php endif; ?>
+
+                            <?= validation_errors('<p style="color:red;">', '</p>'); ?>
+
+                            <form action="<?= base_url('in/do_login') ?>" method="POST">
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control shadow-none" placeholder="Email address" value="<?= set_value('email'); ?>">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="password" class="sr-only">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control shadow-none" placeholder="Password">
+                                </div>
+                                <input id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
+                            </form>
+
+                            <a href="#!" class="forgot-password-link">Forgot password?</a>
+                            <p class="login-card-footer-text">Don't have an account? <a href="<?= base_url() ?>in/sign_up" class="text-reset">Sign up here</a></p>
                             <nav class="login-card-footer-nav">
                                 <a href="#!">Terms of use.</a>
                                 <a href="#!">Privacy policy</a>

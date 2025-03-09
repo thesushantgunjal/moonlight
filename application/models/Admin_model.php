@@ -51,4 +51,20 @@ class Admin_model extends CI_Model
         $this->db->where('admin_id', $admin_id);
         return $this->db->update('admin', $update_password);
     }
+
+
+    public function register_user($data)
+    {
+        return $this->db->insert('users', $data);
+    }
+
+    public function check_email_exists($email)
+    {
+        return $this->db->where('email', $email)->get('users')->num_rows() > 0;
+    }
+
+    public function get_user_by_email($email)
+    {
+        return $this->db->where('email', $email)->get('users')->row();
+    }
 }
