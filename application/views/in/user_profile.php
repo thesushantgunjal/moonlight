@@ -61,7 +61,7 @@
                                         <div class="cs_form_item cs_date_item position-relative border bg-light">
                                             <input type="password" name="password"
                                                 class="form-control w-100 border-0 shadow-none position-relative"
-                                                placeholder="">
+                                                placeholder="*********">
                                         </div>
                                     </div>
                                     <div class="col-md-12 mb-3">
