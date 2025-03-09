@@ -142,7 +142,7 @@ class In extends CI_Controller
                 $this->session->set_userdata($session_data);
 
                 // Redirect to dashboard or home
-                redirect(base_url());
+                redirect(base_url('in/user_profile'));
             } else {
                 $this->session->set_flashdata('error', 'Invalid Email or Password');
                 redirect('in/sign_in');
