@@ -1005,13 +1005,7 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36"> Book your weddings & events in advance and enjoy special
                             savings.</p>
-                        <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
-                            >>>>>> Stashed changes
-                            <<<<<<< HEAD <a href="<?= base_url() ?>"=======<a href="<?= base_url() ?>">>>>>>>
-                                c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-                                <<<<<<< Updated upstream>>>>>>> Stashed changes
-                                    =======
-                                    >>>>>>> Stashed changes
+                            <a href="<?= base_url() ?>"
                                     class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                                     <b>Details View</b>
                                     <span>
@@ -1048,13 +1042,7 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36"> Ideal for business travelers and extended stays with
                             exclusive benefits.</p>
-                        <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
-                            >>>>>> Stashed changes
-                            <<<<<<< HEAD <a href="<?= base_url() ?>"=======<a href="<?= base_url() ?>">>>>>>>
-                                c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-                                <<<<<<< Updated upstream>>>>>>> Stashed changes
-                                    =======
-                                    >>>>>>> Stashed changes
+                            <a href="<?= base_url() ?>"
                                     class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                                     <b>Details View</b>
                                     <span>
@@ -1091,13 +1079,7 @@
                         </h2>
                         <p class="cs_card_subtitle cs_mb_36">Celebrate special occasions with exciting discounts and
                             offers.</p>
-                        <<<<<<< Updated upstream <<<<<<< Updated upstream <a href="<?= base_url() ?>"==============>
-                            >>>>>> Stashed changes
-                            <<<<<<< HEAD <a href="<?= base_url() ?>"=======<a href="<?= base_url() ?>">>>>>>>
-                                c0c77c5360e76bd9c3a943b5c74b7afaaab6e247
-                                <<<<<<< Updated upstream>>>>>>> Stashed changes
-                                    =======
-                                    >>>>>>> Stashed changes
+                        <a href="<?= base_url() ?>"
                                     class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                                     <b>Details View</b>
                                     <span>
