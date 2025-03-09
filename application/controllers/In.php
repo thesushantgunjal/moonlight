@@ -111,6 +111,8 @@ class In extends CI_Controller
 
     public function check_availability()
     {
+        $data["category"] = $this->My_model->select("category");
+
         $this->navbar();
 
         // Load the form helper
@@ -162,7 +164,7 @@ class In extends CI_Controller
     public function complete_reservation()
     {
         $this->navbar();
-        $this->load->view("in/complete_reservation");
+        $this->load->view("in/complete_reservation", $data);
         $this->footer();
     }
     protected function footer()

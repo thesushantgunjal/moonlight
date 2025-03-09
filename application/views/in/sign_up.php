@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Template</title>
+    <title>Join Us Today! Create Your Account</title>
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -23,9 +23,9 @@
                     <div class="col-md-7">
                         <div class="card-body">
                             <div class="brand-wrapper">
-                                <img src="<?= base_url() ?>assets/login/images/logo.svg" alt="logo" class="logo">
+                                <img src="<?= base_url() ?>assets/login/images/moonlight_logo.png" alt="logo" class="logo">
                             </div>
-                            <p class="login-card-description">Sign up your account</p>
+                            <p class="login-card-description">Join Us Today! Create Your Account</p>
                             <form action="<?=base_url('in/save_user')?>" method="post">
                                 <div class="form-group">
                                     <label for="name" class="sr-only">Name</label>
@@ -45,8 +45,7 @@
                                 </div>
                                 <input id="login" class="btn btn-block login-btn mb-4" type="submit" value="Register Now">
                             </form>
-                            <a href="#!" class="forgot-password-link">Forgot password?</a>
-                            <!-- <p class="login-card-footer-text">Don't have an account? <a href="<?=base_url()?>in/sign_in" class="text-reset">Login here</a></p> -->
+                            <p class="login-card-footer-text">Already have an account? <a href="<?=base_url()?>in/sign_in" class="text-reset">Login here</a></p>
                             <nav class="login-card-footer-nav">
                                 <a href="#!">Terms of use.</a>
                                 <a href="#!">Privacy policy</a>
