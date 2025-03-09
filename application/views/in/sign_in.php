@@ -23,7 +23,7 @@
                     <div class="col-md-7">
                         <div class="card-body">
                             <div class="brand-wrapper">
-                                <img src="<?= base_url() ?>assets/login/images/moonlight_logo.png" alt="logo" class="logo">
+                                <img src="<?= base_url() ?>assets/login/images/moonlight.png" alt="logo" class="logo">
                             </div>
                             <p class="login-card-description">Welcome Back! Sign In to Your Account</p>
                             <form action="<?=base_url('in/do_login')?>" method="POST">
