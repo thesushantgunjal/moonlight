@@ -9,8 +9,8 @@
                             <label for="category" class="form-label">Select Category</label>
                             <select class="form-select" id="category" name="category_id" required>
                                 <option selected disabled value="">Choose Category</option>
-                                <?php foreach($category as $key => $row){ ?>
-                                <option value="<?=$row['category_id']?>"><?=$row['category_name']?></option>
+                                <?php foreach ($category as $key => $row) { ?>
+                                    <option value="<?= $row['category_id'] ?>"><?= $row['category_name'] ?></option>
                                 <?php } ?>
                             </select>
                             <div class="invalid-feedback">Please select a category.</div>
@@ -25,7 +25,7 @@
                         <div class="col-md-6">
                             <label class="form-label">Room Facilities</label>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="rooms_facility[]" value="Premium Bedding" id="facility1" >
+                                <input class="form-check-input" type="checkbox" name="rooms_facility[]" value="Premium Bedding" id="facility1">
                                 <label class="form-check-label" for="facility1">Premium Bedding</label>
                             </div>
                             <div class="form-check">
@@ -73,6 +73,18 @@
                             <div class="invalid-feedback">Please upload an image.</div>
                         </div>
                     </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <label for="mon_to_fri_rate" class="form-label">Enter Mon To Fri Rate</label>
+                            <input class="form-control" type="number" id="mon_to_fri_rate" name="mon_to_fri_rate" placeholder="Enter Mon To Fri Rate" required />
+                            <div class="invalid-feedback">Please enter a valid Mon To Fri Rate.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="sat_to_sun_rate" class="form-label">Enter Sat To Sun Rate</label>
+                            <input class="form-control" type="number" id="sat_to_sun_rate" name="sat_to_sun_rate" placeholder="Enter Sat To Sun Rate" required />
+                            <div class="invalid-feedback">Please enter a valid Sat To Sun Rate.</div>
+                        </div>
+                    </div>
                     <div class="row mb-0">
                         <div class="col-md-12 text-center">
                             <button type="submit" class="btn btn-primary">Save Room</button>
@@ -85,11 +97,11 @@
 </div>
 
 <script>
-    (function () {
+    (function() {
         'use strict';
         var forms = document.querySelectorAll('form');
-        Array.prototype.slice.call(forms).forEach(function (form) {
-            form.addEventListener('submit', function (event) {
+        Array.prototype.slice.call(forms).forEach(function(form) {
+            form.addEventListener('submit', function(event) {
                 if (!form.checkValidity()) {
                     event.preventDefault();
                     event.stopPropagation();
