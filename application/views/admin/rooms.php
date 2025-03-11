@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <h5 class="text-uppercase py-2">Add New Room</h5>
+                <h5 class="py-2">Add New Room</h5>
                 <form method="post" action="<?= base_url('admin/save_rooms') ?>" enctype="multipart/form-data" novalidate>
                     <div class="row mb-3">
                         <div class="col-md-6">
