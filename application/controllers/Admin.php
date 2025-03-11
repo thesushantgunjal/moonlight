@@ -59,8 +59,8 @@ class Admin extends CI_Controller
     public function user()
     {
         $this->navbar();
-        $data['users']=$this->My_model->select("users");
-        $this->load->view("admin/user",$data);
+        $data['users'] = $this->My_model->select("users");
+        $this->load->view("admin/user", $data);
         $this->footer();
     }
     // Category CRUD Start
@@ -125,7 +125,51 @@ class Admin extends CI_Controller
         redirect(base_url() . "admin/rooms");
     }
 
+    public function rooms_list()
+    {
 
+        $data["rooms"] = $this->My_model->get_rooms_with_category();
+        $this->navbar();
+        $this->load->view("admin/rooms_list", $data);
+        $this->footer();
+    }
+
+    public function edit_rooms($rooms_id)
+    {
+        $data["rooms"] = $this->My_model->select_where("rooms", ["rooms_id" => $rooms_id]);
+        $data["category"] = $this->My_model->select_where("category", []);
+        $this->navbar();
+        $this->load->view("admin/edit_rooms", $data);
+        $this->footer();
+    }
+
+    public function update_rooms()
+    {
+        if (isset($_POST['rooms_facility']) && is_array($_POST['rooms_facility'])) {
+            $_POST['rooms_facility'] = implode(', ', $_POST['rooms_facility']);
+        }
+
+        $image_fields = ['rooms_main_image', 'rooms_image1', 'rooms_image2', 'rooms_image3', 'rooms_image4'];
+
+        foreach ($image_fields as $field) {
+            if (!empty($_FILES[$field]['name'])) {
+                $filename = time() . '_' . $_FILES[$field]['name'];
+                move_uploaded_file($_FILES[$field]['tmp_name'], "uploads/" . $filename);
+                $_POST[$field] = $filename;
+            }
+        }
+
+        $cond = ['rooms_id' => $_POST['rooms_id']];
+        $this->My_model->update("rooms", $cond, $_POST);
+        redirect(base_url() . "admin/rooms_list");
+    }
+
+    public function delete_rooms($rooms_id)
+    {
+        $cond = ["rooms_id" => $rooms_id];
+        $this->My_model->delete("rooms", $cond);
+        redirect(base_url() . "admin/rooms_list");
+    }
     public function booked_rooms()
     {
         $this->navbar();
@@ -140,17 +184,9 @@ class Admin extends CI_Controller
         $this->footer();
     }
 
-    public function rooms_list()
-    {
-       
-        $data["rooms"] = $this->My_model->get_rooms_with_category();
-        $this->navbar();
-        $this->load->view("admin/rooms_list", $data);
-        $this->footer();
-    }
+
     protected function footer()
     {
         $this->load->view("admin/footer");
     }
-    
 }

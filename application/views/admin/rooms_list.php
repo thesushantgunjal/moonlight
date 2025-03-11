@@ -1,9 +1,8 @@
-<!-- Room List Table -->
 <div class="row">
     <div class="col-md-12 mt-3">
         <div class="card mb-6 table-responsive">
             <div class="card-body">
-                <h5 class="text-uppercase py-2">Rooms List</h5>
+                <h5 class="py-2">Rooms List</h5>
                 <table class="table table-bordered table-hover table-sm text-center display nowrap" id="example"
                     style="width:100%">
                     <thead>
@@ -22,7 +21,7 @@
                             <tr>
                                 <td>
                                     <a href="<?= base_url() ?>admin/edit_rooms/<?= $row['rooms_id'] ?>" class="btn btn-primary btn-sm"><i class="bx bxs-edit"></i></a>
-                                    <a href="<?= base_url() ?>admin/edit_rooms/<?= $row['rooms_id'] ?>" class="btn btn-danger btn-sm"><i class="bx bxs-trash"></i></a>
+                                    <a href="<?= base_url() ?>admin/delete_rooms/<?= $row['rooms_id'] ?>" class="btn btn-danger btn-sm"><i class="bx bxs-trash"></i></a>
                                 </td>
                                 <td><?= $key + 1 ?></td>
                                 <td><?= $row['category_name'] ?></td>

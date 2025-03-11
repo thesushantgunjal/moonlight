@@ -8,6 +8,8 @@ class In extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation'); // Load Validation Library
+        // Load the form helper
+        $this->load->helper('form');
     }
 
     protected function navbar()
@@ -134,7 +136,7 @@ class In extends CI_Controller
                 $this->session->set_userdata($session_data);
 
                 // Redirect to dashboard or home
-                redirect(base_url('in/user_profile'));
+                redirect(base_url('in/personal_profile'));
             } else {
                 $this->session->set_flashdata('error', 'Invalid Email or Password');
                 redirect('in/sign_in');
@@ -156,7 +158,7 @@ class In extends CI_Controller
         $this->load->view('in/booked_rooms_overview');
         $this->footer();
     }
-    
+
     public function personal_profile()
     {
         $this->navbar();
@@ -168,9 +170,6 @@ class In extends CI_Controller
         $data["category"] = $this->My_model->select("category");
 
         $this->navbar();
-
-        // Load the form helper
-        $this->load->helper('form');
 
         // Default empty rooms array
         $data['rooms'] = [];
@@ -196,7 +195,7 @@ class In extends CI_Controller
                         $total_price += $room['mon_to_fri_rate'];
                     } else {
                         // Weekday Price
-                        $total_price += $room['sat_to_sun_rate'];
+                        $total_price +=  $room['sat_to_sun_rate'];
                     }
 
                     $current_date = strtotime("+1 day", $current_date);

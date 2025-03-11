@@ -36,7 +36,7 @@
     <div class="col-md-12 mt-3">
         <div class="card mb-6 table-responsive">
             <div class="card-body">
-                <h5 class="text-uppercase py-2">Category List</h5>
+                <h5 class="py-2">Category List</h5>
                 <table class="table table-bordered table-hover table-sm text-center display nowrap" id="example" style="width:100%">
                     <thead>
                         <tr>
