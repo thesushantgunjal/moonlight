@@ -65,7 +65,7 @@
                          <div class="cs_card cs_style_7 cs_radius_5 overflow-hidden">
                              <a href="<?= base_url() ?>in/room_detail"
                                  class="cs_card_thumb d-block overflow-hidden position-relative cs_primary_bg">
-                                 <img src="<?= base_url() ?>assets/web/assets/img/room_4.jpg" alt="Room">
+                                 <img src="<?= base_url() ?>uploads/<?=$row['rooms_main_image']?>" alt="Room">
                                  <span class="cs_card_btn position-absolute cs_zindex_2">
                                      <span class="cs_btn cs_style_2 cs_accent_btn cs_medium cs_radius_5 cs_fs_15">
                                          <b>Details View</b>
@@ -96,7 +96,7 @@
                                  <div class="cs_card_price cs_mb_17">
                                      <span class="cs_primary_color">From</span>
                                      <span class="cs_accent_color cs_fs_38 cs_primary_font">&#8377;
-                                         <?= $row['mon_to_fri_rate'] ?></span>
+                                         <?= $row['total_price'] ?></span>
                                  </div>
                                  <ul class="cs_card_list cs_mp_0">
                                      <li>110 Sq</li>

@@ -22,7 +22,7 @@
                         ?>
                             <tr>
                                 <td class="text-center">
-                                    <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?= base_url('admin/delete') ?>/<?= $row['user_id'] ?>">
+                                    <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?= base_url() ?>admin/login_user_delete/<?= $row['user_id'] ?>">
                                         <i class='bx bx-trash'></i>
                                     </a>
                                 </td>

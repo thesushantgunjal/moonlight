@@ -47,19 +47,19 @@
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($category as $key => $list) {
+                        foreach ($category as $key => $row) {
                         ?>
                             <tr>
                                 <td>
-                                    <a class="btn btn-sm btn-primary" href="<?= base_url('admin/edit_category') ?>/<?= $list['category_id'] ?>">
+                                    <a class="btn btn-sm btn-primary" href="<?= base_url('admin/edit_category') ?>/<?= $row['category_id'] ?>">
                                         <i class='bx bx-edit'></i>
                                     </a>
-                                    <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?= base_url('admin/delete') ?>/<?= $list['category_id'] ?>">
+                                    <a onClick="return confirm('Are You Sure?')" class="btn btn-sm btn-danger" href="<?= base_url() ?>admin/category_delete/<?= $row['category_id'] ?>">
                                         <i class='bx bx-trash'></i>
                                     </a>
                                 </td>
                                 <td><?= $key + 1 ?></td>
-                                <td><?= $list['category_name'] ?></td>
+                                <td><?= $row['category_name'] ?></td>
                             </tr>
                         <?php
                         }

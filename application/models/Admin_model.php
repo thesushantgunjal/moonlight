@@ -52,7 +52,6 @@ class Admin_model extends CI_Model
         return $this->db->update('admin', $update_password);
     }
 
-
     public function register_user($data)
     {
         return $this->db->insert('users', $data);

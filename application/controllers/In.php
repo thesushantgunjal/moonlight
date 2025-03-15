@@ -165,51 +165,64 @@ class In extends CI_Controller
         $this->load->view('in/personal_profile');
         $this->footer();
     }
+    
     public function check_availability()
-    {
-        $data["category"] = $this->My_model->select("category");
+{
 
-        $this->navbar();
+    $data["category"] = $this->My_model->select("category");
 
-        // Default empty rooms array
-        $data['rooms'] = [];
+    // Default empty rooms array
+    $data['rooms'] = [];
 
-        // Check if form is submitted
-        if ($this->input->post()) {
-            $check_in_date = $this->input->post('check_in_date');
-            $check_out_date = $this->input->post('check_out_date');
-            $category_id = $this->input->post('category_id');
+    // Check if form is submitted
+    if ($this->input->post()) {
+        $check_in_date = $this->input->post('check_in_date');
+        $check_out_date = $this->input->post('check_out_date');
+        $category_id = $this->input->post('category_id');
 
-            $rooms = $this->My_model->getAvailableRooms($check_in_date, $check_out_date, $category_id);
+        $rooms = $this->My_model->getAvailableRooms($check_in_date, $check_out_date, $category_id);
 
-            foreach ($rooms as &$room) {
-                $total_price = 0;
-                $current_date = strtotime($check_in_date);
-                $end_date = strtotime($check_out_date);
+        foreach ($rooms as &$room) {
+            $total_price = 0;
+            $current_date = strtotime($check_in_date);
+            $end_date = strtotime($check_out_date);
+            $weekday_count = 0;
+            $weekend_count = 0;
 
-                while ($current_date <= $end_date) {
-                    $day_of_week = date('N', $current_date); // 1 (Monday) to 7 (Sunday)
+            while ($current_date <= $end_date) {
+                $day_of_week = date('N', $current_date); // 1 (Monday) to 7 (Sunday)
 
-                    if ($day_of_week == 6 || $day_of_week == 7) {
-                        // Weekend Price
-                        $total_price += $room['mon_to_fri_rate'];
-                    } else {
-                        // Weekday Price
-                        $total_price +=  $room['sat_to_sun_rate'];
-                    }
-
-                    $current_date = strtotime("+1 day", $current_date);
+                if ($day_of_week >= 1 && $day_of_week <= 5) {
+                    // Weekday (Monday to Friday)
+                    $total_price += $room['mon_to_fri_rate'];
+                    $weekday_count++;
+                } else {
+                    // Weekend (Saturday & Sunday)
+                    $total_price += $room['sat_to_sun_rate'];
+                    $weekend_count++;
                 }
 
-                $room['total_price'] = $total_price; // Add total price to the room array
+                $current_date = strtotime("+1 day", $current_date);
             }
 
-            $data['rooms'] = $rooms;
+            // Add total price and day counts to the room array
+            $room['total_price'] = $total_price;
+            $room['weekday_count'] = $weekday_count;
+            $room['weekend_count'] = $weekend_count;
+            $room['check_in_date'] = $check_in_date;
+            $room['check_out_date'] = $check_out_date;
         }
 
-        $this->load->view("in/check_availability", $data);
-        $this->footer();
+        $data['rooms'] = $rooms;
+
+        // echo "<pre>";
+        // print_r($data['rooms']); // Debugging
     }
+    $this->navbar();
+    $this->load->view("in/check_availability", $data);
+    $this->footer();
+}
+
 
 
 

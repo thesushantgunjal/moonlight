@@ -56,13 +56,22 @@ class Admin extends CI_Controller
         $this->load->view("admin/dashboard");
         $this->footer();
     }
-    public function user()
+
+    public function login_users()
     {
         $this->navbar();
         $data['users'] = $this->My_model->select("users");
-        $this->load->view("admin/user", $data);
+        $this->load->view("admin/login_users", $data);
         $this->footer();
     }
+
+    public function login_user_delete($user_id)
+    {
+        $cond = [$user_id => "user_id"];
+        $this->My_model->delete("users", $cond);
+        redirect(base_url() . "admin/login_users");
+    }
+
     // Category CRUD Start
     public function category()
     {
@@ -71,31 +80,37 @@ class Admin extends CI_Controller
         $this->load->view("admin/category", $data);
         $this->footer();
     }
+
     public function save_category()
     {
         $this->My_model->insert("category", $_POST);
         redirect("admin/category");
     }
-    public function edit_category($id)
+
+    public function edit_category($category_id)
     {
         $this->navbar();
-        $cond = ['category_id' => $id];
+        $cond = ['category_id' => $category_id];
         $data['category_data'] = $this->My_model->select_where("category", $cond)[0];
         $this->load->view("admin/edit_category", $data);
         $this->footer();
     }
-    public function update()
+
+    public function category_update()
     {
         $cond = ['category_id' => $_POST['category_id']];
         $this->My_model->update("category", $cond, $_POST);
         redirect("admin/category");
     }
-    public function delete($id)
+
+
+    public function category_delete($category_id)
     {
-        $cond = ['category_id' => $id];
+        $cond = [$category_id => "category_id"];
         $this->My_model->delete("category", $cond);
-        redirect("admin/category");
+        redirect(base_url() . "admin/category");
     }
+
     // Category CRUD End
     public function rooms()
     {
@@ -170,6 +185,7 @@ class Admin extends CI_Controller
         $this->My_model->delete("rooms", $cond);
         redirect(base_url() . "admin/rooms_list");
     }
+
     public function booked_rooms()
     {
         $this->navbar();

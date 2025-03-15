@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body">
                 <h5>Manage Category</h5>
-                <form action="<?= base_url('admin/update') ?>" method="POST">
+                <form action="<?= base_url('admin/category_update') ?>" method="post">
                     <div class="row">
                         <input type="hidden" name="category_id" value="<?= $category_data['category_id'] ?>">
                         <div class="col-md-12">

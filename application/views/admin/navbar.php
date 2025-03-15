@@ -123,7 +123,7 @@
           </li>
           <!-- Users -->
           <li class="menu-item">
-            <a href="<?= base_url() ?>admin/user" class="menu-link">
+            <a href="<?= base_url() ?>admin/login_users" class="menu-link">
               <i class="menu-icon tf-icons bx bx-user"></i>
               <div class="text-truncate" data-i18n="Users">Login User's</div>
             </a>
